@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   updateComment,
   deleteComment,
-} from "@/app/withdepth/[slug]/comment-actions";
+} from "@/app/writing/[slug]/comment-actions";
 
 type Props = {
   slug: string;

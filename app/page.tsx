@@ -1,7 +1,7 @@
 import { Hero } from "@/components/hero/Hero";
 import { AboutTeaser } from "@/components/sections/AboutTeaser";
 import { RecentWriting } from "@/components/sections/RecentWriting";
-import { EcosystemGrid } from "@/components/sections/EcosystemGrid";
+import { Mission } from "@/components/sections/Mission";
 import { DispatchCTA } from "@/components/sections/DispatchCTA";
 import { IntroOverlay } from "@/components/intro/IntroOverlay";
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <AboutTeaser />
       <RecentWriting />
-      <EcosystemGrid />
+      <Mission />
       <DispatchCTA />
     </main>
   );

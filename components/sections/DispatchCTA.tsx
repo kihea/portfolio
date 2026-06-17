@@ -88,7 +88,7 @@ export function DispatchCTA() {
 
           <div className="relative flex flex-col items-start justify-between gap-4 font-heading text-[10px] uppercase tracking-[0.2em] text-[color:var(--fg-3)] md:flex-row md:items-center">
             <Link
-              href="/withdepth"
+              href="/writing"
               className="cursor-pointer text-[color:var(--fg-2)] underline decoration-1 underline-offset-4 transition-colors hover:text-[color:var(--fg)]"
             >
               Read past issues →

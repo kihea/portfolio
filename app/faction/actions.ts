@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { getStripe, isStripeConfigured, siteUrl } from "@/lib/stripe";
 
-const TIP_PRESET_CENTS = [300, 700, 2000] as const; // $3, $7, $20
+const TIP_PRESET_CENTS = [100, 500, 2000] as const; // $1, $5, $20
 const TIP_MIN_CENTS = 100;     // $1
 const TIP_MAX_CENTS = 100_000; // $1,000
 

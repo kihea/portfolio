@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useTransition } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { auth } from "@/lib/auth/store";
-import { createComment } from "@/app/withdepth/[slug]/comment-actions";
+import { createComment } from "@/app/writing/[slug]/comment-actions";
 
 type Props = {
   slug: string;

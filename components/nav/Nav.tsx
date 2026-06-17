@@ -6,11 +6,10 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/cn";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
-const links = [
-  { href: "/withdepth", label: "WithDepth" },
-  { href: "/learn", label: "Learn" },
-  { href: "/faction/forum", label: "The Faction" },
-  { href: "/store", label: "Shop" },
+const links: { href: string; label: string; hard?: boolean }[] = [
+  { href: "/writing", label: "Writing" },
+  { href: "/learn", label: "Tessera", hard: true },
+  { href: "/portfolio", label: "Portfolio" },
 ];
 
 export function Nav() {
@@ -67,19 +66,26 @@ function NavInner() {
           </Link>
 
           <div className="hidden items-center gap-1 md:flex">
-            {links.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="rounded-full px-4 py-2 font-heading text-[10px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] transition-colors hover:text-[color:var(--fg)]"
-              >
-                {l.label}
-              </Link>
-            ))}
+            {links.map((l) =>
+              l.hard ? (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="rounded-full px-4 py-2 font-heading text-[10px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] transition-colors hover:text-[color:var(--fg)]"
+                >
+                  {l.label}
+                </a>
+              ) : (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="rounded-full px-4 py-2 font-heading text-[10px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] transition-colors hover:text-[color:var(--fg)]"
+                >
+                  {l.label}
+                </Link>
+              ),
+            )}
             <ThemeToggle className="ml-2" />
-            <Link href="/faction" className="btn-primary btn-sm ml-2">
-              Begin
-            </Link>
           </div>
 
           <div className="flex items-center gap-1 md:hidden">
@@ -115,23 +121,27 @@ function NavInner() {
             : "pointer-events-none opacity-0",
         )}
       >
-        {links.map((l) => (
-          <Link
-            key={l.href}
-            href={l.href}
-            onClick={() => setOpen(false)}
-            className="border-b border-[var(--rule)] py-5 font-display italic text-3xl text-[color:var(--fg)] transition-colors hover:text-[color:var(--fg-2)]"
-          >
-            {l.label}
-          </Link>
-        ))}
-        <Link
-          href="/faction"
-          onClick={() => setOpen(false)}
-          className="btn-primary mt-6 self-start"
-        >
-          Begin
-        </Link>
+        {links.map((l) =>
+          l.hard ? (
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="border-b border-[var(--rule)] py-5 font-display italic text-3xl text-[color:var(--fg)] transition-colors hover:text-[color:var(--fg-2)]"
+            >
+              {l.label}
+            </a>
+          ) : (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setOpen(false)}
+              className="border-b border-[var(--rule)] py-5 font-display italic text-3xl text-[color:var(--fg)] transition-colors hover:text-[color:var(--fg-2)]"
+            >
+              {l.label}
+            </Link>
+          ),
+        )}
       </div>
     </>
   );

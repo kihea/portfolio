@@ -43,7 +43,7 @@ export function RecentWriting() {
         </div>
 
         <Link
-          href="/withdepth"
+          href="/writing"
           className="mt-12 inline-flex cursor-pointer items-center gap-2 font-heading text-[10px] uppercase tracking-[0.18em] text-[color:var(--fg-2)] underline decoration-1 underline-offset-4 transition-colors hover:text-[color:var(--fg)]"
         >
           All essays →

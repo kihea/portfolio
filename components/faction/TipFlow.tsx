@@ -6,8 +6,8 @@ import { startTipCheckout } from "@/app/faction/actions";
 import { cn } from "@/lib/cn";
 
 const PRESETS = [
-  { cents: 300, label: "$3", note: "a coffee" },
-  { cents: 700, label: "$7", note: "a book" },
+  { cents: 100, label: "$1", note: "a thank-you" },
+  { cents: 500, label: "$5", note: "a coffee" },
   { cents: 2000, label: "$20", note: "a real one" },
 ];
 
@@ -30,8 +30,7 @@ export function TipFlow({ enabled }: Props) {
   if (!enabled) {
     return (
       <p className="mx-auto max-w-[44ch] font-body text-[15px] leading-[1.7] text-[color:var(--fg)]">
-        Not ready for membership? You can leave a one-time gift instead. No
-        account required. Available when the payment flow ships.
+        The tip jar opens when the payment flow ships. No account required.
       </p>
     );
   }

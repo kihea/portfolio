@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import { cn } from "@/lib/cn";
 import { auth } from "@/lib/auth/store";
-import { toggleBookmark } from "@/app/withdepth/[slug]/actions";
+import { toggleBookmark } from "@/app/writing/[slug]/actions";
 
 type Props = {
   slug: string;

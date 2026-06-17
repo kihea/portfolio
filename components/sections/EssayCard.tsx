@@ -18,7 +18,7 @@ export function EssayCard({ essay, featured = false }: Props) {
       transition={{ duration: 0.7, ease: [0.19, 1, 0.22, 1] }}
     >
       <Link
-        href={`/withdepth/${essay.slug}`}
+        href={`/writing/${essay.slug}`}
         id={essay.slug}
         className={
           "group gloss-card relative block overflow-hidden rounded-[20px] cursor-pointer " +

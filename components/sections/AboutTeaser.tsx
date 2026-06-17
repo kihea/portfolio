@@ -51,20 +51,19 @@ export function AboutTeaser() {
           </div>
           <h2 className="mb-6 font-display italic font-semibold text-[color:var(--fg)] leading-[1.05] tracking-[-0.03em] text-[clamp(2rem,4vw,48px)]">
             Built for those the
-            <br />
+            
             system forgot to count.
           </h2>
-          <div className="mb-6 h-px w-10 bg-gradient-to-r from-[var(--accent)] to-transparent" />
+          
           <div className="max-w-[52ch] space-y-4 font-body text-[15px] leading-[1.78] text-[color:var(--fg-2)]">
             <p>
-              The systems around you were not built with you in mind. They were
-              built for a version of you that is useful and quiet.
+              Any system of organization is meant to squeeze you into a box, dampening your potential.
             </p>
             <p className="text-[color:var(--fg)]">
               Here, your complexity is the point.
             </p>
           </div>
-          <Link href="/withdepth/lead-them-to-water" className="btn-ghost btn-sm mt-7">
+          <Link href="/writing/lead-them-to-water" className="btn-ghost btn-sm mt-7">
             Read the full manifesto →
           </Link>
         </div>

@@ -11,6 +11,23 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  // Tessera is a bundled static Vite SPA living in public/learn/. Serve its
+  // index at the clean /learn path; its hashed assets under /learn/assets/*
+  // are served straight from public/ by the filesystem layer.
+  async rewrites() {
+    return [{ source: "/learn", destination: "/learn/index.html" }];
+  },
+  // The writing section moved from /withdepth to /writing.
+  async redirects() {
+    return [
+      { source: "/withdepth", destination: "/writing", permanent: true },
+      {
+        source: "/withdepth/:slug*",
+        destination: "/writing/:slug*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

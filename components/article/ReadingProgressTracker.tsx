@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { saveReadingProgress } from "@/app/withdepth/[slug]/actions";
+import { saveReadingProgress } from "@/app/writing/[slug]/actions";
 
 type Props = {
   slug: string;

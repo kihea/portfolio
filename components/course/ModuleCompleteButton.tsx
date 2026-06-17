@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { auth } from "@/lib/auth/store";
-import { markModuleComplete, unmarkModuleComplete } from "@/app/learn/[slug]/[module]/actions";
+import { markModuleComplete, unmarkModuleComplete } from "@/app/_courses_disabled/[slug]/[module]/actions";
 
 type Props = {
   courseSlug: string;

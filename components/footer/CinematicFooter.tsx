@@ -86,11 +86,11 @@ function CinematicFooterInner() {
           </h2>
 
           <div className="mt-10 flex flex-wrap justify-center gap-3">
-            <Link href="/faction" className="btn-primary">
-              Begin
-            </Link>
-            <Link href="/withdepth" className="btn-ghost">
+            <Link href="/writing" className="btn-primary">
               The Writing
+            </Link>
+            <Link href="/portfolio" className="btn-ghost">
+              The Portfolio
             </Link>
           </div>
         </div>
@@ -113,19 +113,28 @@ function CinematicFooterInner() {
           <nav className="flex flex-wrap gap-6">
             {[
               { href: "/", label: "The Work" },
-              { href: "/withdepth", label: "WithDepth" },
-              { href: "/learn", label: "Learn" },
-              { href: "/faction/forum", label: "The Faction" },
-              { href: "/store", label: "Store" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="font-heading text-[9px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] transition-colors hover:text-[color:var(--fg)]"
-              >
-                {l.label}
-              </Link>
-            ))}
+              { href: "/writing", label: "Writing" },
+              { href: "/learn", label: "Tessera", hard: true },
+              { href: "/portfolio", label: "Portfolio" },
+            ].map((l) =>
+              (l as { hard?: boolean }).hard ? (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="font-heading text-[9px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] transition-colors hover:text-[color:var(--fg)]"
+                >
+                  {l.label}
+                </a>
+              ) : (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="font-heading text-[9px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] transition-colors hover:text-[color:var(--fg)]"
+                >
+                  {l.label}
+                </Link>
+              ),
+            )}
           </nav>
         </div>
 

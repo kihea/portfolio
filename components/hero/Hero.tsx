@@ -5,14 +5,14 @@ import Link from "next/link";
 import { WordPullUp } from "./WordPullUp";
 import { ShaderAnimation } from "./TopographyShader";
 
-const headlineWords = ["You", "were", "not", "made", "to", "be", "managed."];
+const headlineWords = ["You", "can", "just", "be", "you."];
 const ENTRY_EASE = [0.19, 1, 0.22, 1] as const;
 
 export function Hero() {
   return (
     <section
       id="origin"
-      className="h-screen overflow-hidden border-b border-[var(--rule)]"
+      className="h-screen pt-10 overflow-hidden border-b border-[var(--rule)]"
       aria-label="Hero"
     >
       <motion.div  
@@ -69,7 +69,7 @@ export function Hero() {
           >
             <WordPullUp
               words={headlineWords}
-              className="font-wrap italic font-medium text-[color:var(--bg-inverse)] leading-[1.06] tracking-[-0.025em] text-[clamp(1.5rem,2.6vw,2.1rem)]"
+              className="font-wrap italic font-medium text-[color:var(--bg-inverse)] leading-[1.06] tracking-[-0.025em] text-[clamp(1.8rem,2.6vw,2.1rem)]"
             />
           </motion.div>
 
@@ -79,9 +79,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1.0, ease: ENTRY_EASE }}
             className="mt-6 max-w-[46ch] font-body text-[16px] leading-[1.72] text-[color:var(--fg-3)] md:text-[17px]"
           >
-            A community for those who remember what they are, beneath what
-            they have been told to be. We consent to our own diminishment for
-            as long as we mistake the system for the world.
+            A community for those who intentionally strive towards their potential, and yet also will not allow it to be constrained.
           </motion.p>
 
           <motion.div
@@ -90,11 +88,11 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1.2, ease: ENTRY_EASE }}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <Link href="/faction" className="btn-primary">
-              Begin
-            </Link>
-            <Link href="/withdepth" className="btn-ghost text-[color:var(--bg-inverse)]">
+            <Link href="/writing" className="btn-primary">
               The Writing
+            </Link>
+            <Link href="/portfolio" className="btn-ghost text-[color:var(--bg-inverse)]">
+              The Portfolio
             </Link>
           </motion.div>
 

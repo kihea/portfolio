@@ -12,7 +12,6 @@ import "./globals.css";
 import { Nav } from "@/components/nav/Nav";
 import { CinematicFooter } from "@/components/footer/CinematicFooter";
 import { RouteThemeBody } from "@/components/effects/RouteThemeBody";
-import { AuthModal } from "@/components/auth/AuthModal";
 import { themeInitScript } from "@/lib/theme";
 
 const cormorant = Cormorant_Garamond({
@@ -92,7 +91,6 @@ export default function RootLayout({
         <Nav />
         {children}
         <CinematicFooter />
-        <AuthModal />
       </body>
     </html>
   );
