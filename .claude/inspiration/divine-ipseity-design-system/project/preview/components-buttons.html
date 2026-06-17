@@ -1,0 +1,154 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .group {
+    display: grid; grid-template-columns: 92px 1fr; gap: 18px;
+    align-items: center; padding: 14px 0;
+    border-top: 1px solid rgba(24,20,18,.12);
+  }
+  .group:first-of-type { border-top: 0; padding-top: 4px; }
+  .glabel {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: .14em;
+    text-transform: uppercase; color: #6B5E54;
+  }
+  .glabel b { display:block; color:#B11226; font-weight:700; letter-spacing:.22em; font-size:9px; margin-bottom:3px; }
+  .row { display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+
+  /* ── ARTICLE (kept as-is) ─────────────────────────────────────── */
+  .lnk-read {
+    font-family: var(--font-sans); font-weight: 600; font-size: 14px;
+    color:#B11226; text-decoration: underline; text-decoration-thickness:1.5px;
+    text-underline-offset:4px;
+  }
+  .lnk-ghost {
+    font-family: var(--font-sans); font-weight: 600; font-size: 13px;
+    letter-spacing: .04em; color:#181412; background:transparent;
+    border:0; padding:6px 0; cursor:pointer;
+    border-bottom:1px solid rgba(24,20,18,.4);
+  }
+  .lnk-cont {
+    font-family: var(--font-serif); font-style:italic; font-size:18px;
+    color:#B11226; text-decoration:none; border-bottom:1px solid #B11226;
+    padding-bottom: 1px;
+  }
+
+  /* ── HOMEPAGE (modernized · glossy) ────────────────────────────── */
+  .cta-primary {
+    font-family: var(--font-sans); font-weight: 600; font-size: 14px;
+    color: #F4ECDA; border: 0; cursor: pointer;
+    padding: 15px 24px;
+    display:inline-flex; align-items:center; gap: 14px;
+    border-radius: 999px; position: relative; overflow: hidden;
+    background: linear-gradient(180deg, #C5253A 0%, #B11226 55%, #8E0E1E 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.28),
+      inset 0 -1px 0 rgba(0,0,0,.18),
+      0 1px 1px rgba(24,20,18,.10),
+      0 8px 22px -10px rgba(177,18,38,.55);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  }
+  .cta-primary::before {
+    content:""; position:absolute; left:0; right:0; top:0; height:50%;
+    background: linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,0));
+    pointer-events:none; border-radius: 999px 999px 0 0;
+  }
+  .cta-primary:hover {
+    transform: translateY(-1px); filter: saturate(1.05);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.32),
+      inset 0 -1px 0 rgba(0,0,0,.22),
+      0 2px 2px rgba(24,20,18,.12),
+      0 14px 28px -10px rgba(177,18,38,.65);
+  }
+  .cta-primary:active { transform: translateY(0); filter: saturate(.95) brightness(.96); }
+  .cta-primary > * { position: relative; z-index: 1; }
+  .cta-primary .arrow {
+    width: 22px; height: 1.5px; background:#F4ECDA; position:relative;
+    transition: width 180ms ease;
+  }
+  .cta-primary .arrow::after {
+    content:""; position:absolute; right:0; top:-3px;
+    width:7px; height:7px; border-top:1.5px solid #F4ECDA; border-right:1.5px solid #F4ECDA;
+    transform: rotate(45deg);
+  }
+  .cta-primary:hover .arrow { width: 32px; }
+
+  .cta-secondary {
+    font-family: var(--font-sans); font-weight: 600; font-size: 14px;
+    background: rgba(244,236,218,.55);
+    color: #181412; cursor: pointer;
+    padding: 14px 22px; border: 1px solid rgba(24,20,18,.55);
+    border-radius: 999px;
+    display:inline-flex; align-items:center; gap: 10px;
+    backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+    transition: all 180ms ease;
+  }
+  .cta-secondary:hover { background: #181412; color: #F4ECDA; border-color:#181412; }
+
+  /* ── PUNCHUP (modernized streetwear) ──────────────────────────── */
+  .pu {
+    font-family: var(--font-sans); font-weight: 700; font-size: 12px;
+    letter-spacing: .18em; text-transform: uppercase;
+    background:#181412; color:#F4ECDA; border:0; cursor:pointer;
+    padding: 18px 22px;
+    display: inline-grid; grid-template-columns: 1fr auto; align-items:center; gap:32px;
+    min-width: 240px;
+    position: relative; overflow: hidden;
+    isolation: isolate;
+  }
+  .pu .pu-label, .pu .pu-tag { position: relative; z-index: 2; }
+  .pu .pu-tag {
+    font-family: var(--font-mono); font-weight: 400; font-size: 10px;
+    letter-spacing: .12em; color: #B11226;
+    transition: color 180ms ease, background 180ms ease, padding 180ms ease;
+  }
+  .pu::before {
+    content:""; position:absolute; left:0; top:0; bottom:0; width:0;
+    background:#B11226; transition: width 220ms cubic-bezier(.2,.8,.2,1); z-index:1;
+  }
+  .pu:hover::before { width: 100%; }
+  .pu:hover .pu-label { color:#F4ECDA; }
+  .pu:hover .pu-tag { color: #181412; background:#F4ECDA; padding: 2px 6px; }
+
+  .pu-ghost {
+    font-family: var(--font-sans); font-weight: 700; font-size: 11px;
+    letter-spacing: .22em; text-transform: uppercase;
+    background:transparent; color:#181412; cursor:pointer;
+    padding: 14px 18px; border: 1.5px solid #181412;
+    transition: all 180ms ease;
+  }
+  .pu-ghost:hover { background:#181412; color:#F4ECDA; }
+</style>
+</head>
+<body style="min-height:380px;padding:24px 28px"><div class="card">
+  <div class="label-eyebrow" style="margin-bottom:14px">Buttons — by surface</div>
+
+  <div class="group">
+    <div class="glabel"><b>ARTICLE</b>WithDepth</div>
+    <div class="row">
+      <a href="#" class="lnk-read">Read on →</a>
+      <button class="lnk-ghost">View archive →</button>
+      <a href="#" class="lnk-cont">Continue reading</a>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="glabel"><b>HOMEPAGE</b>Master site</div>
+    <div class="row">
+      <button class="cta-primary">Become a subscriber<span class="arrow"></span></button>
+      <button class="cta-secondary">Read the manifesto</button>
+    </div>
+  </div>
+
+  <div class="group">
+    <div class="glabel"><b>PUNCHUP</b>Apparel</div>
+    <div class="row">
+      <button class="pu"><span class="pu-label">Shop Drop №01</span><span class="pu-tag">100&nbsp;PCS</span></button>
+      <button class="pu-ghost">Notify me</button>
+    </div>
+  </div>
+
+  <div style="font-family:var(--font-mono);font-size:11px;color:#6B5E54;letter-spacing:.06em;margin-top:18px;border-top:1px solid rgba(24,20,18,.18);padding-top:12px">
+    Article stays inline-link. Homepage CTAs are pill-shaped, glossy oxblood with a frosted ivory ghost twin. PunchUp is a black slab that wipes oxblood on hover — streetwear, not letterpress.
+  </div>
+</div></body></html>

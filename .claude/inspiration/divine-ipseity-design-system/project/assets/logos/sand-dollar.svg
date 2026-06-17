@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Divine Ipseity sand dollar emblem">
+  <defs>
+    <radialGradient id="sd" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8CFA6"></stop>
+      <stop offset="100%" stop-color="#C9A572"></stop>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#sd)" stroke="#7A0E1F" stroke-width="1.5"></circle>
+  
+  <g stroke="#7A0E1F" stroke-width="1.2" fill="none" opacity="0.85">
+    <g transform="translate(100 100)">
+      <g id="petal">
+        <path d="M0 -10 C -8 -34, -8 -58, 0 -78 C 8 -58, 8 -34, 0 -10 Z" fill="#F4ECDA" stroke="#7A0E1F"></path>
+        <circle cx="0" cy="-44" r="2" fill="#7A0E1F"></circle>
+      </g>
+      <use href="#petal" transform="rotate(72)"></use>
+      <use href="#petal" transform="rotate(144)"></use>
+      <use href="#petal" transform="rotate(216)"></use>
+      <use href="#petal" transform="rotate(288)"></use>
+      <circle cx="0" cy="0" r="6" fill="#7A0E1F"></circle>
+    </g>
+  </g>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#7A0E1F" stroke-width="0.5" stroke-dasharray="2 3" opacity="0.6"></circle>
+</svg>

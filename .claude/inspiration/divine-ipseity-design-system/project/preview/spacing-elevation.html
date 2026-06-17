@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .stage { display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+
+  /* shared editorial card */
+  .ed {
+    position: relative; background: #F4ECDA; padding: 22px 20px 18px;
+    border: 1px solid #181412; aspect-ratio: 1.55/1; min-height: 152px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: all 180ms cubic-bezier(.2,.8,.2,1);
+  }
+  .ed::before, .ed::after {
+    content:""; position:absolute; width:10px; height:10px; border:1px solid #181412;
+  }
+  .ed::before { top:-1px; left:-1px; border-right:0; border-bottom:0; }
+  .ed::after  { bottom:-1px; right:-1px; border-left:0; border-top:0; }
+  .ed .reg {
+    position:absolute; top:8px; right:10px; width:14px; height:14px;
+    color:#181412;
+  }
+  .ed .num {
+    font-family: var(--font-mono); font-size: 9.5px; letter-spacing:.18em;
+    color:#B11226; text-transform: uppercase;
+  }
+  .ed h4 {
+    font-family: var(--font-serif); font-style: italic; font-weight: 600;
+    font-size: 22px; line-height: 1.05; margin: 6px 0 0; color: #181412;
+    letter-spacing: -.005em;
+  }
+  .ed .rule { height:1.5px; background:#181412; width:46px; margin-top:10px; }
+  .ed .meta {
+    font-family: var(--font-mono); font-size: 10px; color:#6B5E54;
+    letter-spacing:.04em; line-height:1.45;
+  }
+
+  /* DEFAULT — at rest */
+  .rest .reg { opacity: .55; }
+  .rest .rule { width:46px; }
+
+  /* HOVER — ink rule extends, oxblood pulls in */
+  .hov { border-color:#181412; }
+  .hov::before, .hov::after { border-color:#B11226; }
+  .hov .reg { color:#B11226; opacity:1; }
+  .hov h4 em { color:#B11226; }
+  .hov .rule { width: 90%; height:2px; background:#B11226; }
+
+  /* PRESSED — riso double-impression, oxblood foxing */
+  .press {
+    transform: translate(-2px,-2px);
+    box-shadow: 2px 2px 0 0 #B11226, 4px 4px 0 0 #181412;
+  }
+  .press::before, .press::after { border-color:#B11226; }
+  .press .reg { color:#B11226; }
+  .press h4 { color:#B11226; }
+  .press .rule { background:#B11226; width:60%; height:2px; }
+
+  /* state caption row */
+  .caps { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:14px; }
+  .cap {
+    font-family: var(--font-sans); font-weight:700; font-size:10px;
+    letter-spacing:.24em; text-transform:uppercase; color:#181412;
+    display:flex; align-items:baseline; gap:10px;
+  }
+  .cap em {
+    font-style:normal; font-family:var(--font-mono); font-weight:400;
+    letter-spacing:.04em; color:#6B5E54; text-transform:none; font-size:10px;
+  }
+  .dot { width:6px; height:6px; background:#B11226; display:inline-block; }
+  .dot.empty { background:transparent; outline:1px solid #181412; outline-offset:-1px; }
+  .dot.full { background:#181412; }
+</style>
+</head>
+<body style="min-height:280px;padding:24px 28px"><div class="card">
+
+  <div class="stage">
+
+    <!-- DEFAULT -->
+    <article class="ed rest">
+      <svg class="reg" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1">
+        <circle cx="7" cy="7" r="5"/><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="7"/>
+      </svg>
+      <div>
+        <div class="num">EDITION №14 · AT REST</div>
+        <h4>The Loneliness <em>Industry</em></h4>
+      </div>
+      <div>
+        <div class="rule"></div>
+        <div class="meta" style="margin-top:8px">1 px ink rule · zero shadow · paper, not glass</div>
+      </div>
+    </article>
+
+    <!-- HOVER -->
+    <article class="ed hov">
+      <svg class="reg" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2">
+        <circle cx="7" cy="7" r="5"/><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="7"/>
+      </svg>
+      <div>
+        <div class="num">EDITION №14 · CURSOR ENTERS</div>
+        <h4>The Loneliness <em>Industry</em></h4>
+      </div>
+      <div>
+        <div class="rule"></div>
+        <div class="meta" style="margin-top:8px">corners flip oxblood · rule extends · italic ignites</div>
+      </div>
+    </article>
+
+    <!-- PRESSED -->
+    <article class="ed press">
+      <svg class="reg" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2">
+        <circle cx="7" cy="7" r="5"/><line x1="7" y1="0" x2="7" y2="14"/><line x1="0" y1="7" x2="14" y2="7"/>
+      </svg>
+      <div>
+        <div class="num">EDITION №14 · CLICK STAMPED</div>
+        <h4>The Loneliness <em>Industry</em></h4>
+      </div>
+      <div>
+        <div class="rule"></div>
+        <div class="meta" style="margin-top:8px">−2px translate · oxblood foxing layer · ink stamp behind</div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="caps">
+    <div class="cap"><span class="dot empty"></span>REST <em>· paper</em></div>
+    <div class="cap"><span class="dot"></span>HOVER <em>· oxblood pull-in</em></div>
+    <div class="cap"><span class="dot full"></span>PRESS <em>· double-impression</em></div>
+  </div>
+
+  <div style="font-family:var(--font-mono);font-size:11px;color:#6B5E54;margin-top:18px;letter-spacing:.06em;border-top:1px solid rgba(24,20,18,.18);padding-top:12px">
+    Elevation is editorial, not material. Cards behave like letterpress: a registration mark in the margin, a rule under the title, an oxblood ghost on the press of the click. No drop shadow. No backdrop blur. No glass.
+  </div>
+</div></body></html>

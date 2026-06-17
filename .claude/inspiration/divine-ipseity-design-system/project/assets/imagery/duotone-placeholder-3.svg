@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Archival imagery placeholder — hands at work">
+  <defs>
+    <filter id="grain3"><feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2"></feTurbulence><feColorMatrix values="0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0 0.06  0 0 0 0.5 0"></feColorMatrix></filter>
+  </defs>
+  <rect width="800" height="600" fill="#7A0E1F"></rect>
+  <rect y="0" width="800" height="240" fill="#B11226"></rect>
+  
+  <g fill="#F4ECDA">
+    <path d="M180 600 L180 380 Q180 320 240 310 L320 300 Q360 296 400 312 L400 600 Z"></path>
+    <path d="M620 600 L620 380 Q620 320 560 310 L480 300 Q440 296 400 312 L400 600 Z"></path>
+    
+    <g stroke="#181412" stroke-width="1.5" opacity="0.55" fill="none">
+      <line x1="240" y1="320" x2="248" y2="380"></line>
+      <line x1="278" y1="312" x2="286" y2="382"></line>
+      <line x1="316" y1="306" x2="324" y2="384"></line>
+      <line x1="354" y1="306" x2="362" y2="386"></line>
+    </g>
+    <g stroke="#181412" stroke-width="1.5" opacity="0.55" fill="none">
+      <line x1="560" y1="320" x2="552" y2="380"></line>
+      <line x1="522" y1="312" x2="514" y2="382"></line>
+      <line x1="484" y1="306" x2="476" y2="384"></line>
+      <line x1="446" y1="306" x2="438" y2="386"></line>
+    </g>
+  </g>
+  <rect width="800" height="600" filter="url(#grain3)" opacity="0.55"></rect>
+</svg>

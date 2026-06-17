@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What does Say's Law claim?",
+    "options": [
+      "Demand creates its own supply",
+      "Supply creates its own demand",
+      "Government spending always increases total output",
+      "Money always flows toward the wealthy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Say's Law, formulated by Jean-Baptiste Say, holds that producing a good gives the producer income equal to its value, which is then spent on other goods. Aggregate supply and demand are therefore identical, and general overproduction is impossible. Keynes attacked this claim decisively in 1936 after the Great Depression made it visibly false."
+  },
+  {
+    "question": "Adam Smith's argument about the division of labor depends on which condition for its limit?",
+    "options": [
+      "The literacy rate of the workforce",
+      "The size of the market",
+      "The cost of capital",
+      "The price of grain"
+    ],
+    "correctIndex": 1,
+    "explanation": "Smith's famous formulation: 'the division of labor is limited by the extent of the market.' A pin factory making 48,000 pins a day requires a market that can absorb 48,000 pins a day. This is why long-distance trade, urbanization, and high working-class wages all support productivity growth — they expand the market."
+  },
+  {
+    "question": "Ricardo's theory of differential rent argues that:",
+    "options": [
+      "Landlords earn rent because they work harder than tenants",
+      "Rent reflects the difference in productivity between the best land in use and the marginal land",
+      "Rent is set by government decree",
+      "Rent disappears as the economy grows"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ricardo showed that the price of grain must cover the cost of production on the most expensive land in use. Owners of better land therefore receive a windfall — rent — that increases as the economy grows and increasingly marginal land is brought under cultivation. The contemporary application is to urban housing, where the underlying mechanism is identical."
+  },
+  {
+    "question": "What does Ricardo mean by the 'comparative advantage' of a nation in trade?",
+    "options": [
+      "The nation that is absolutely best at producing a good should produce all of it",
+      "Each nation should specialize in the good it produces at the lowest opportunity cost relative to other goods",
+      "Nations should aim for self-sufficiency",
+      "Trade balances should always be positive"
+    ],
+    "correctIndex": 1,
+    "explanation": "Even if one country is absolutely better at producing everything, both countries gain from trade if each specializes in the good in which it has the lowest opportunity cost relative to other goods. This is the theoretical foundation of free-trade economics, though Ricardo himself was clear that the principle has many qualifications in practice."
+  },
+  {
+    "question": "Why has the iron law of wages — that wages tend toward subsistence — failed as a strict prediction in modern industrial economies?",
+    "options": [
+      "Capitalists became more generous over time",
+      "Mass emigration, productivity gains, the fertility transition, and collective action broke the labor-supply feedback loop Ricardo assumed",
+      "Wages cannot rise without state intervention",
+      "Workers in industrial economies still live at subsistence"
+    ],
+    "correctIndex": 1,
+    "explanation": "All four mechanisms in option 2 broke the feedback loop. Mass emigration reduced labor supply; productivity gains lowered the cost of the subsistence bundle; the fertility transition decoupled wages from population growth; collective action and the welfare state created bargaining power outside market supply and demand."
+  },
+  {
+    "question": "The 'invisible hand' phrase appears in Adam Smith's writing:",
+    "options": [
+      "On every other page of the *Wealth of Nations*",
+      "Once in the *Wealth of Nations*, once in *Moral Sentiments*, and once in a much earlier essay",
+      "Only in a private letter that was never published",
+      "Only in his lectures on jurisprudence"
+    ],
+    "correctIndex": 1,
+    "explanation": "The phrase appears just three times in Smith's published writing. It is a passing rhetorical flourish that became a brand. The doctrine of the 'invisible hand' as a universal market principle was constructed by later interpreters, not by Smith."
+  },
+  {
+    "question": "John Stuart Mill's most distinctive contribution to political economy was the distinction between:",
+    "options": [
+      "Capitalism and socialism",
+      "The laws of production (natural) and the laws of distribution (chosen)",
+      "Long-run and short-run analysis",
+      "Microeconomics and macroeconomics"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mill argued that production follows natural laws (diminishing returns, capital accumulation, productivity gains) but that distribution is a matter of political and ethical choice. Society can collectively decide who gets what, subject only to the constraint that the chosen distribution not undermine production. This move opens the conceptual space for democratic reform of capitalism."
+  },
+  {
+    "question": "Who was Harriet Taylor Mill, and why does she matter for the history of political economy?",
+    "options": [
+      "A French economist who refined Say's Law",
+      "An economic historian who documented the enclosures",
+      "John Stuart Mill's intellectual partner and co-author, who argued for women's full political and economic equality",
+      "A leader of the Anti-Corn Law League"
+    ],
+    "correctIndex": 2,
+    "explanation": "Harriet Taylor Mill was credited by John Stuart Mill as substantially co-author of *On Liberty* and a major influence on the *Principles of Political Economy*. Her *Enfranchisement of Women* (1851) was an early substantial argument for women's economic and political equality. Her standing has been substantially rehabilitated by recent scholarship."
+  },
+  {
+    "question": "The 'broken window fallacy' associated with Frédéric Bastiat is the error of:",
+    "options": [
+      "Counting only what is visible while ignoring what is not — crediting the activity created by destruction without subtracting the activity that did not happen because resources were redirected",
+      "Believing that windows are economic indicators",
+      "Ignoring the long-run effects of free trade",
+      "Failing to account for population growth in economic models"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bastiat's essay *That Which Is Seen and That Which Is Not Seen* (1850) argued that observers tend to credit the economic activity caused by destruction (the window-repair) without subtracting the activity that would have happened with those same resources (the shoes the window-owner would have bought). The argument has obvious force but also obvious limits — Keynesians later argued that in a depression, with idle resources, the broken-window logic does fail."
+  },
+  {
+    "question": "Which figure or movement translated Ricardian theory into a mass political campaign for free trade in nineteenth-century Britain?",
+    "options": [
+      "The Chartists",
+      "The Manchester School and the Anti-Corn Law League",
+      "The Owenites",
+      "The Tractarians"
+    ],
+    "correctIndex": 1,
+    "explanation": "Richard Cobden and John Bright led the Anti-Corn Law League, the most effective political organization built around classical economic theory. The Corn Laws were repealed in 1846, partly as a result. Free trade then became the dominant ideology of the British state and its empire for the next seventy years."
+  }
+]

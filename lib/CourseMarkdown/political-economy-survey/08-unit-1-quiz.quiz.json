@@ -1,0 +1,134 @@
+[
+  {
+    "question": "Which anthropologist provided the most influential modern refutation of Adam Smith's barter origin story?",
+    "options": [
+      "Bronisław Malinowski",
+      "David Graeber",
+      "Karl Polanyi",
+      "Marshall Sahlins"
+    ],
+    "correctIndex": 1,
+    "explanation": "Graeber's *Debt: The First 5,000 Years* (2011) reconstructed the deep history of credit, demonstrating that credit and debt predate coinage by millennia. Polanyi and Sahlins both contributed to the broader argument, but the specific refutation of the barter-then-money-then-credit sequence was Graeber's."
+  },
+  {
+    "question": "Marshall Sahlins's phrase 'the original affluent society' refers to:",
+    "options": [
+      "Pre-industrial European peasants who had access to commons",
+      "Ancient Mesopotamian temple economies",
+      "Hunter-gatherer societies that met their material wants with modest labor",
+      "Inca redistribution systems that prevented famine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sahlins's 1968 essay argued that hunter-gatherers in moderately fertile environments worked roughly 15–20 hours a week to meet their needs. The provocation was directed against the assumption — built into classical economics — that pre-agricultural life was desperately impoverished."
+  },
+  {
+    "question": "The 'fictitious commodities' in Karl Polanyi's analysis are:",
+    "options": [
+      "Gold, silver, and copper",
+      "Stocks, bonds, and derivatives",
+      "Land, labor, and money",
+      "Tea, sugar, and tobacco"
+    ],
+    "correctIndex": 2,
+    "explanation": "Polanyi argued in *The Great Transformation* that land, labor, and money were not originally produced for sale and therefore are not real commodities in the way a manufactured good is. Treating them as commodities required massive state action and produced characteristic disasters that Polanyi traces through nineteenth-century history."
+  },
+  {
+    "question": "What was the most consequential economic effect of the Black Death of 1347–1351?",
+    "options": [
+      "It introduced new agricultural technologies to Europe",
+      "It killed enough peasants to give survivors significant labor leverage",
+      "It caused immediate abolition of serfdom by royal decree",
+      "It made the European nobility wealthier"
+    ],
+    "correctIndex": 1,
+    "explanation": "Population loss of 30–60% across Europe produced a severe labor shortage. Wages rose, peasants gained mobility despite legal restrictions, and the customary obligations of serfdom were gradually replaced by money rents over the following century. The Peasants' Revolt of 1381 was one of the political shocks that accompanied this transition."
+  },
+  {
+    "question": "The Roman *latifundia* were:",
+    "options": [
+      "Small subsistence farms worked by free peasants",
+      "Large agricultural estates worked primarily by slave labor",
+      "State-owned redistribution warehouses",
+      "Workshops where freedmen practiced skilled trades"
+    ],
+    "correctIndex": 1,
+    "explanation": "*Latifundia* were the large estates that consolidated in Italy from roughly the second century BCE onward, displacing smallholders and depending on slave labor supplied by Roman military expansion. Their decline in the late empire — partly because the slave supply dried up — produced the dependent-peasant arrangement (the *coloni*) that prefigured medieval serfdom."
+  },
+  {
+    "question": "The Inca economy was structured primarily around:",
+    "options": [
+      "Market exchange in coinage",
+      "Long-distance private trade in luxuries",
+      "Centralized labor tribute and redistribution",
+      "Plantation-style agriculture"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Inca state had no marketplaces and no money. It ran on *mit'a* — compulsory labor tribute from subject communities — and redistributed grain and textiles from state warehouses (*qollqa*) according to political and religious priorities. Polanyi treated this as a paradigmatic example of an economy embedded in social structures."
+  },
+  {
+    "question": "Which of these correctly describes the structure of European feudalism?",
+    "options": [
+      "A market economy with strong state regulation",
+      "A direct extraction system in which peasants owed rent or labor service to lords by customary right",
+      "A barter economy with no fixed obligations",
+      "A planned economy directed by the Church"
+    ],
+    "correctIndex": 1,
+    "explanation": "Feudalism was a direct extraction system, not a market economy. Lords took grain or labor directly from peasants tied to manorial land. The obligations were bounded by custom and adjudicated in manorial courts, but were not exchanged through prices or wages."
+  },
+  {
+    "question": "The English enclosure movement (roughly 1450–1850):",
+    "options": [
+      "Allowed peasants to claim ownership of land they had worked for generations",
+      "Privatized common lands and dispossessed peasants of customary rights",
+      "Was carried out without any legal authority",
+      "Mainly affected Scotland and Ireland rather than England"
+    ],
+    "correctIndex": 1,
+    "explanation": "The enclosures consolidated common lands into private estates, often through Acts of Parliament passed by landowners with the most to gain. The result was a landless rural population that provided much of the labor force for the Industrial Revolution. Karl Polanyi, Eric Hobsbawm, and E. P. Thompson all treated this as central to capitalism's emergence."
+  },
+  {
+    "question": "Mercantilism, as a doctrine, held that:",
+    "options": [
+      "Free trade between nations made all parties richer",
+      "National wealth was best measured by gold and silver reserves",
+      "States should not intervene in markets",
+      "Labor was the sole source of value"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mercantilist writers — Thomas Mun, Colbert, William Petty — believed national wealth was best measured in bullion, that trade was zero-sum, and that the state should actively manage exports, imports, and colonial trade to accumulate gold and silver. Smith's *Wealth of Nations* was largely written against this view."
+  },
+  {
+    "question": "Eric Williams's *Capitalism and Slavery* (1944) argued that:",
+    "options": [
+      "Slavery existed independently of capitalism and was unrelated to industrialization",
+      "Profits from the Atlantic slave trade were a major source of capital for the British Industrial Revolution",
+      "The abolition of slavery had no economic motivation",
+      "Slavery in the Americas was identical to Roman slavery"
+    ],
+    "correctIndex": 1,
+    "explanation": "Williams's central thesis was that slave-trade profits funded the early industrial bourgeoisie of Britain and that the eventual abolition of slavery was driven not by moral awakening alone but by the changing economic interests of British capital. The thesis has been debated for eight decades, but recent quantitative work has tended to support its broad outlines."
+  },
+  {
+    "question": "Joint-stock companies like the English East India Company differed from earlier merchant ventures because:",
+    "options": [
+      "They were owned by a single wealthy family",
+      "They issued tradeable shares allowing ownership to be distributed and risk to be spread",
+      "They operated only inside national borders",
+      "They were forbidden from raising armies"
+    ],
+    "correctIndex": 1,
+    "explanation": "Joint-stock companies could raise capital by issuing shares that were tradeable on stock exchanges. This allowed long-term, capital-intensive ventures — like maintaining colonial fleets and forts — that no single merchant could finance. The East India Company also had its own army and effectively governed Bengal from 1757 to 1858."
+  },
+  {
+    "question": "Why does the historical sequence — credit before coinage, markets constructed by state action — matter for political theory?",
+    "options": [
+      "It proves that all economic systems are inherently unjust",
+      "It supports the claim that 'free markets' are a deliberate political construction rather than a natural state",
+      "It demonstrates that pre-agricultural humans were starving",
+      "It justifies the abolition of property altogether"
+    ],
+    "correctIndex": 1,
+    "explanation": "If markets in their modern sense were constructed by state action — enclosures, abolition of customary rights, central banks, colonial monopolies — then the rhetoric that contrasts 'free markets' with 'state intervention' is historically incoherent: state intervention is what made the markets in question possible. This does not mean markets are bad; it means the standard story of their origin is wrong."
+  }
+]

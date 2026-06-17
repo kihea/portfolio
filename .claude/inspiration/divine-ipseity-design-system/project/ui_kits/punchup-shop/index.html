@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>PunchUp — Shop kit</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="di-stripe-top"></div>
+  <div id="app" data-screen-label="PunchUp Shop"></div>
+  <script type="text/babel">
+    const ITEMS = [
+      { id: 1, name: 'Are You Not Exhausted', stamp: 'ARE YOU NOT\nEXHAUSTED?', sub: 'PUNCHUP DROP №01', price: 38, num: '№ 01 / 100', pos: 'HEAVYWEIGHT TEE', variant: 'plain' },
+      { id: 2, name: 'Definition is Limitation', stamp: 'Definition\nis\nlimitation.', sub: 'PUNCHUP DROP №01', price: 38, num: '№ 02 / 100', pos: 'NATURAL COTTON', variant: 'italic' },
+      { id: 3, name: 'Systematic Sins', stamp: 'Systematic Sins', sub: 'PUNCHUP × WITHDEPTH', price: 42, num: '№ 03 / 100', pos: 'BLACK COTTON', variant: 'tag' },
+      { id: 4, name: 'Preserve the Human', stamp: 'PRESERVE\nTHE HUMAN', sub: 'PUNCHUP DROP №01', price: 38, num: '№ 04 / 100', pos: 'OXBLOOD ON IVORY', variant: 'plain' },
+      { id: 5, name: 'Be Unlimited', stamp: 'be\nunlimited.', sub: 'PUNCHUP DROP №01', price: 32, num: '№ 05 / 100', pos: 'POSTER · 18×24', variant: 'italic' },
+      { id: 6, name: 'Faction of Truth', stamp: 'FACTION\nOF\nTRUTH', sub: 'MEMBERS ONLY', price: 0, num: '№ 06 / 100', pos: 'PATCH SET', variant: 'plain' },
+    ];
+
+    function App() {
+      const [cart, setCart] = React.useState([]);
+      const [open, setOpen] = React.useState(false);
+      const total = cart.reduce((s, x) => s + x.price, 0);
+      const add = (it) => setCart(c => [...c, it]);
+      const remove = (idx) => setCart(c => c.filter((_, i) => i !== idx));
+      return (<>
+        <div className="shell">
+          <header className="ph">
+            <a className="wm" href="#">Punch<em>Up</em></a>
+            <nav>
+              <a href="#">Drop №01</a>
+              <a href="#">Tees</a>
+              <a href="#">Posters</a>
+              <a href="#">About</a>
+            </nav>
+            <button className="cart" onClick={()=>setOpen(true)}>BAG ({cart.length})</button>
+          </header>
+
+          <section className="dm">
+            <div className="eyebrow">DROP №01 · 100 PIECES · NUMBERED</div>
+            <h1>ARE YOU<br/>NOT <em>EXHAUSTED?</em></h1>
+            <p className="lede">Six pieces. One hundred each. Heavyweight cotton, screen‑printed in small batches by a co‑op in Lisbon. Every shirt is a small mobile flag. Wear it next to people who need to find you.</p>
+            <div className="meta">
+              <span>SHIPS · APR 30</span>
+              <span>·</span>
+              <span>NUMBERED OF 100</span>
+              <span>·</span>
+              <span>PROCEEDS RETURN TO MISSION</span>
+            </div>
+          </section>
+
+          <section className="grid">
+            {ITEMS.map(it => (
+              <article key={it.id} className={`tile var-${it.variant}`} onClick={()=>add(it)}>
+                <div className="frame">
+                  <div className="num">{it.num}</div>
+                  <div className="stamp" style={{whiteSpace:'pre-line'}}>{it.stamp}</div>
+                  <div className="pos">{it.pos}</div>
+                </div>
+                <div className="meta">
+                  <div>
+                    <div className="name">{it.name}</div>
+                    <div className="sub">{it.sub}</div>
+                  </div>
+                  <div className="price">{it.price ? `$${it.price}` : 'GRATIS'}</div>
+                </div>
+              </article>
+            ))}
+          </section>
+
+          <footer className="foot">
+            <div className="wm-block">PunchUp — a sub‑brand of <i style={{color:'var(--ivory)'}}>Divine Ipseity</i>.</div>
+            <div className="legal">© MMXXVI · No retail. No resellers. Numbered editions only.</div>
+          </footer>
+        </div>
+
+        <div className={`scrim ${open?'on':''}`} onClick={()=>setOpen(false)}/>
+        <aside className={`cart-drawer ${open?'open':''}`}>
+          <h3>YOUR BAG · DROP №01</h3>
+          {cart.length === 0 && <div className="empty">A short empty page. Pick something below.</div>}
+          {cart.map((it, i) => (
+            <div key={i} className="row">
+              <span>{it.name}</span>
+              <span style={{display:'flex',gap:14,alignItems:'center'}}>
+                <span style={{fontFamily:'var(--font-mono)'}}>${it.price}</span>
+                <span className="x" onClick={()=>remove(i)}>×</span>
+              </span>
+            </div>
+          ))}
+          {cart.length > 0 && <>
+            <div className="total"><span>Total</span><span>${total}</span></div>
+            <button className="checkout">Check out</button>
+          </>}
+        </aside>
+      </>);
+    }
+    ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+  </script>
+</body>
+</html>

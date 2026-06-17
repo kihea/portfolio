@@ -1,0 +1,171 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .head {
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom: 22px;
+  }
+  .step {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing:.18em;
+    color:#6B5E54; text-transform: uppercase;
+  }
+  .step b { color:#B11226; font-weight:700; letter-spacing:.22em; }
+  .step .bar {
+    display:inline-block; width:28px; height:2px; background:#181412;
+    margin: 0 6px 2px;
+  }
+  .step .bar.muted { background:rgba(24,20,18,.18); }
+
+  /* ── floating-label fields ─────────────────────────────────────── */
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .ff {
+    position:relative; padding-top: 16px;
+  }
+  .ff input {
+    font-family: var(--font-serif); font-size: 22px; line-height: 1.1;
+    width: 100%; background: transparent; border: 0; outline: none;
+    color: #181412; padding: 8px 24px 10px 0; letter-spacing: -.005em;
+  }
+  .ff input::placeholder { color: rgba(107,94,84,.55); font-style: italic; }
+  .ff label {
+    position:absolute; left: 0; top: 22px;
+    font-family: var(--font-sans); font-weight: 600; font-size: 10px;
+    letter-spacing: .22em; text-transform: uppercase; color: #6B5E54;
+    transform-origin: 0 0; pointer-events:none;
+    transition: transform 180ms ease, color 180ms ease;
+  }
+  .ff.has-value label, .ff:focus-within label { transform: translateY(-22px) scale(.92); color:#B11226; }
+  .ff::after {
+    content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:#181412;
+  }
+  .ff::before {
+    content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background:#B11226;
+    transition: width 220ms cubic-bezier(.2,.8,.2,1);
+  }
+  .ff:focus-within::before { width: 100%; }
+  .ff .marker {
+    position:absolute; right:0; bottom:6px;
+    font-family: var(--font-mono); font-size: 10px; letter-spacing:.04em;
+    color: #6B5E54;
+  }
+  .ff.has-value .marker { color:#B11226; }
+
+  /* ── segmented tier control ────────────────────────────────────── */
+  .seg {
+    display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;
+    border:1px solid #181412; margin-top: 20px;
+  }
+  .seg .opt {
+    padding: 14px 16px; cursor: pointer; position:relative;
+    display:flex; flex-direction:column; gap:4px;
+    border-right:1px solid #181412;
+  }
+  .seg .opt:last-child { border-right: 0; }
+  .seg .opt .name {
+    font-family: var(--font-sans); font-weight:700; font-size:11px;
+    letter-spacing:.22em; text-transform:uppercase; color:#181412;
+  }
+  .seg .opt .price {
+    font-family: var(--font-mono); font-size:11px; color:#6B5E54;
+  }
+  .seg .opt .desc {
+    font-family: var(--font-serif); font-style: italic; font-size: 13px; color: #3D332D;
+  }
+  .seg .opt.on { background:#181412; }
+  .seg .opt.on .name { color:#F4ECDA; }
+  .seg .opt.on .price { color:#B11226; }
+  .seg .opt.on .desc { color:rgba(244,236,218,.78); }
+  .seg .opt.on::after {
+    content:""; position:absolute; left:0; right:0; bottom:0; height:2px; background:#B11226;
+  }
+
+  /* ── toggle switches ───────────────────────────────────────────── */
+  .switch-row {
+    display:flex; gap:32px; margin-top: 22px;
+  }
+  .sw {
+    display:flex; align-items:center; gap:12px; cursor:pointer;
+    font-family: var(--font-serif); font-size: 15px; color:#181412;
+  }
+  .sw .track {
+    width:34px; height:18px; background:transparent; border:1.5px solid #181412;
+    position:relative; flex:none;
+  }
+  .sw .knob {
+    position:absolute; top:1px; left:1px; width:13px; height:13px;
+    background:#181412; transition: all 180ms ease;
+  }
+  .sw.on .track { background:#B11226; border-color:#B11226; }
+  .sw.on .knob { left:18px; background:#F4ECDA; }
+  .sw .help {
+    font-family: var(--font-mono); font-size:10px; color:#6B5E54;
+    letter-spacing:.04em; margin-left: 4px;
+  }
+
+  /* ── footer cta ────────────────────────────────────────────────── */
+  .foot {
+    margin-top: 26px; display:flex; align-items:center; gap:18px;
+    border-top:1px solid rgba(24,20,18,.18); padding-top: 18px;
+  }
+  .submit {
+    font-family: var(--font-sans); font-weight:600; font-size:13px;
+    background:#B11226; color:#F4ECDA; border:0; cursor:pointer;
+    padding: 14px 20px; display:inline-flex; align-items:center; gap:14px;
+  }
+  .submit .arrow { width: 22px; height: 1.5px; background:#F4ECDA; position:relative; }
+  .submit .arrow::after { content:""; position:absolute; right:0; top:-3px; width:7px; height:7px; border-top:1.5px solid #F4ECDA; border-right:1.5px solid #F4ECDA; transform: rotate(45deg); }
+  .legalese {
+    font-family: var(--font-mono); font-size: 10px; color:#6B5E54; letter-spacing:.04em;
+  }
+  .legalese b { color:#B11226; font-weight:700; letter-spacing:.18em; }
+</style>
+</head>
+<body style="min-height:520px;padding:24px 28px"><div class="card">
+
+  <div class="head">
+    <div class="label-eyebrow">Form — membership / newsletter</div>
+    <div class="step">
+      <b>STEP 02</b><span class="bar"></span><span class="bar"></span><span class="bar muted"></span>OF&nbsp;03
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="ff has-value">
+      <label>Email address</label>
+      <input type="email" value="reader@example.org"/>
+      <span class="marker">VERIFIED ●</span>
+    </div>
+    <div class="ff">
+      <label>Handle (optional)</label>
+      <input type="text" placeholder="how we should reply"/>
+      <span class="marker">2&nbsp;/&nbsp;24</span>
+    </div>
+  </div>
+
+  <div class="seg">
+    <div class="opt">
+      <div class="name">FREE</div>
+      <div class="price">$0 / mo</div>
+      <div class="desc">Weekly digest</div>
+    </div>
+    <div class="opt on">
+      <div class="name">SUBSCRIBER</div>
+      <div class="price">$7 / mo</div>
+      <div class="desc">Full archive · footnotes</div>
+    </div>
+    <div class="opt">
+      <div class="name">FACTION</div>
+      <div class="price">$12 / mo</div>
+      <div class="desc">Members-only essays</div>
+    </div>
+  </div>
+
+  <div class="switch-row">
+    <label class="sw on"><span class="track"><span class="knob"></span></span>Send me weekly essays.<span class="help">▸ Sun 7am ET</span></label>
+    <label class="sw"><span class="track"><span class="knob"></span></span>Notify when PunchUp drops.<span class="help">▸ ~4×/yr</span></label>
+  </div>
+
+  <div class="foot">
+    <button class="submit">Continue<span class="arrow"></span></button>
+    <div class="legalese"><b>NO TRACKING.</b>&nbsp;&nbsp;You can leave at any time. We never sell, and we don't tell.</div>
+  </div>
+</div></body></html>

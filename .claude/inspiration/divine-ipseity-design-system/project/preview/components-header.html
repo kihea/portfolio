@@ -1,0 +1,161 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .frame { border: 1px solid rgba(24,20,18,.5); }
+  .stripe { height: 2px; background:#B11226; }
+
+  header.dh {
+    background:#F4ECDA; padding: 22px 26px;
+    display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 28px;
+  }
+
+  /* ── personal sigil + wordmark ─────────────────────────────────── */
+  .sig-block { display: flex; align-items: center; gap: 14px; }
+  .sigil {
+    width: 44px; height: 44px; border: 1.5px solid #181412; border-radius: 999px;
+    display: grid; place-items: center; position: relative; flex: none;
+    background: #F4ECDA;
+  }
+  .sigil .mono {
+    font-family: var(--font-serif); font-style: italic; font-weight: 600;
+    font-size: 22px; line-height: 1; color: #181412;
+    transform: translateY(-1px); letter-spacing: -.04em;
+  }
+  .sigil::after {
+    content:""; position:absolute; right:-3px; bottom:-1px;
+    width: 8px; height: 8px; background:#B11226; border-radius: 999px;
+  }
+
+  .wm {
+    display: flex; flex-direction: column; gap: 1px; line-height: 1;
+  }
+  .wm .name {
+    font-family: var(--font-serif); font-style: italic; font-weight: 500;
+    font-size: 28px; letter-spacing: -.02em; color: #181412;
+  }
+  .wm .name em {
+    font-style: italic; color:#B11226; font-weight: 600;
+    border-bottom: 1.5px solid #B11226; padding-bottom: 1px;
+  }
+  .wm .by {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: .14em;
+    color: #6B5E54; text-transform: uppercase; margin-top: 4px;
+  }
+  .wm .by b { color:#181412; font-weight:600; }
+
+  /* ── now-writing status (personal pulse) ───────────────────────── */
+  .now {
+    justify-self: start; margin-left: 8px;
+    border-left: 1px solid rgba(24,20,18,.22); padding-left: 22px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .now .label {
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: .22em;
+    text-transform: uppercase; color: #B11226; display:flex; align-items:center; gap:8px;
+  }
+  .pulse {
+    width: 7px; height: 7px; background:#B11226; border-radius: 999px;
+    box-shadow: 0 0 0 0 rgba(177,18,38,.6);
+    animation: pulse 1.6s ease-out infinite;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(177,18,38,.55); }
+    100% { box-shadow: 0 0 0 10px rgba(177,18,38,0); }
+  }
+  .now .title {
+    font-family: var(--font-serif); font-style: italic; font-size: 16px;
+    color: #181412; max-width: 38ch; line-height: 1.2;
+  }
+  .now .title b { font-style: normal; font-weight: 600; }
+
+  /* ── right cluster: tiny links + glossy subscribe ───────────────── */
+  .right { display: flex; align-items: center; gap: 18px; }
+  .right .links {
+    display:flex; gap: 14px; align-items: center;
+    font-family: var(--font-sans); font-weight: 500; font-size: 12px;
+    letter-spacing: .08em; text-transform: uppercase; color: #181412;
+  }
+  .right .links a { color:#181412; text-decoration:none; padding: 4px 0; }
+  .right .links a:hover { color:#B11226; }
+  .right .links span.sep {
+    width: 3px; height: 3px; background:#181412; border-radius: 999px; opacity:.4;
+  }
+
+  .sub {
+    font-family: var(--font-sans); font-weight: 600; font-size: 12px;
+    color:#F4ECDA; border:0; cursor:pointer;
+    padding: 9px 16px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #C5253A 0%, #B11226 55%, #8E0E1E 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.28),
+      inset 0 -1px 0 rgba(0,0,0,.18),
+      0 6px 18px -10px rgba(177,18,38,.55);
+    display: inline-flex; align-items:center; gap: 8px;
+  }
+  .sub .heart {
+    width: 6px; height: 6px; background:#F4ECDA; border-radius:999px;
+  }
+
+  /* ── inline marginalia under header ─────────────────────────────── */
+  .marginalia {
+    display:flex; justify-content: space-between; align-items: baseline;
+    padding: 8px 26px 12px; background:#F4ECDA;
+    border-top: 1px dashed rgba(24,20,18,.28);
+    font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em;
+    color: #6B5E54;
+  }
+  .marginalia em {
+    font-family: var(--font-serif); font-style: italic; font-size: 12px;
+    color:#181412; letter-spacing:0;
+  }
+  .marginalia .crumbs { display:flex; gap: 12px; align-items:baseline; }
+  .marginalia .crumbs s {
+    text-decoration: none; color:#B11226; font-weight: 700;
+  }
+</style>
+</head>
+<body style="min-height:240px;padding:24px 28px"><div class="card">
+  <div class="label-eyebrow" style="margin-bottom:14px">Site header — personal, not editorial</div>
+
+  <div class="frame">
+    <div class="stripe"></div>
+    <header class="dh">
+      <div class="sig-block">
+        <div class="sigil"><span class="mono">D<i style="color:#B11226">i</i></span></div>
+        <div class="wm">
+          <div class="name" style="font-family:'Allura',cursive;font-style:normal;font-weight:400;font-size:42px;letter-spacing:0;line-height:.9">Divine <em style="border-bottom:1.5px solid #B11226">Ipseity</em></div>
+          <div class="by">A WRITER · ANONYMOUS · <b>SINCE&nbsp;MMXXIV</b></div>
+        </div>
+      </div>
+
+      <div class="now">
+        <div class="label"><span class="pulse"></span>NOW WRITING · №14</div>
+        <div class="title">on <b>The Loneliness Industry</b> &mdash; <span style="color:#6B5E54">why connection became a paid service</span></div>
+      </div>
+
+      <div class="right">
+        <div class="links">
+          <a href="#">Read</a>
+          <span class="sep"></span>
+          <a href="#">Letters</a>
+          <span class="sep"></span>
+          <a href="#">Wear</a>
+        </div>
+        <button class="sub"><span class="heart"></span>Subscribe</button>
+      </div>
+    </header>
+
+    <div class="marginalia">
+      <div class="crumbs">
+        <span>↪&nbsp;You are <em>about to read</em> the work of one person.</span>
+      </div>
+      <div class="crumbs">
+        <span><s>4,812</s>&nbsp;readers · 32 countries · zero algorithms</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="font-family:var(--font-mono);font-size:11px;color:#6B5E54;margin-top:14px;letter-spacing:.06em">
+    Sigil monogram (D + oxblood <i>i</i>) · italic Garamond wordmark · "Now writing" pulse with current edition · marginalia line says <em>"the work of one person"</em>
+  </div>
+</div></body></html>

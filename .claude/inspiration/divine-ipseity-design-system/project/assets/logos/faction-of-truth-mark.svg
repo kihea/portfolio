@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Faction of Truth seal">
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#181412" stroke-width="1.5"></circle>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="#181412" stroke-width="0.5" stroke-dasharray="2 3"></circle>
+  
+  <defs>
+    <path id="rim" d="M 100 100 m -72 0 a 72 72 0 1 1 144 0 a 72 72 0 1 1 -144 0"></path>
+  </defs>
+  <text font-family="Public Sans, sans-serif" font-size="13" font-weight="600" fill="#181412" letter-spacing="6">
+    <textPath href="#rim" startOffset="0">FACTION · OF · TRUTH ·  ISONOMIA · </textPath>
+  </text>
+  
+  <g stroke="#B11226" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M62 124 L100 60 L138 124 Z"></path>
+    <line x1="62" y1="124" x2="138" y2="124"></line>
+    <circle cx="100" cy="105" r="3" fill="#B11226"></circle>
+  </g>
+</svg>

@@ -1,0 +1,281 @@
+/* ────────────────────────────────────────────────────────────────────────
+   Divine Ipseity — Design Tokens
+   colors_and_type.css
+
+   Single source of truth for color + type. Every artifact in this system
+   should import this file before its own styles. Override nothing here;
+   define semantic aliases on top.
+   ──────────────────────────────────────────────────────────────────────── */
+
+/* ── Fonts (Google Fonts — substitution flagged in README) ───────────── */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Pirata+One&family=Allura&display=swap");mily=UnifrakturMaguntia&display=swap");
+
+:root {
+  /* ── BASE COLORS ─────────────────────────────────────────────────── */
+  --oxblood:        #B11226;   /* primary — brightened oxblood */
+  --oxblood-foxing: #7A0E1F;   /* deeper, hover/press */
+  --oxblood-tint:   #E8B6BD;   /* very rare — only behind oxblood headlines on bone */
+
+  --ink:            #181412;   /* warm near-black, never #000 */
+  --ink-soft:       #3D332D;   /* "char" — body alt, captions */
+  --ink-mute:       #6B5E54;   /* metadata, disabled */
+
+  --ivory:          #F4ECDA;   /* primary surface (paper) */
+  --bone:           #E8DEC6;   /* secondary surface, dividers */
+  --bone-deep:      #D8CCB0;   /* pressed bone */
+
+  --sand-dollar:    #D9B98A;   /* MASTER BRAND ACCENT ONLY */
+
+  --rule:           rgba(24, 20, 18, 0.6);   /* hairline rule */
+  --rule-strong:    rgba(24, 20, 18, 0.9);
+
+  /* ── SEMANTIC FOREGROUND / BACKGROUND ────────────────────────────── */
+  --bg:             var(--ivory);
+  --bg-alt:         var(--bone);
+  --bg-deep:        var(--bone-deep);
+  --bg-inverse:     var(--ink);
+
+  --fg:             var(--ink);
+  --fg-2:           var(--ink-soft);
+  --fg-3:           var(--ink-mute);
+  --fg-inverse:     var(--ivory);
+
+  --accent:         var(--oxblood);
+  --accent-hover:   var(--oxblood-foxing);
+
+  /* ── TYPE FAMILIES ───────────────────────────────────────────────── */
+  --font-serif:     "EB Garamond", "Garamond", "Times New Roman", Georgia, serif;
+  --font-sans:      "Public Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono:      "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --font-blackletter: "Pirata One", "EB Garamond", serif;
+  --font-script:    "Allura", "EB Garamond", cursive;
+
+  /* ── TYPE SCALE (rem, 16 px base) ────────────────────────────────── */
+  --fs-xs:    0.75rem;   /* 12 — fine print */
+  --fs-sm:    0.875rem;  /* 14 — captions */
+  --fs-base:  1rem;      /* 16 — UI default */
+  --fs-md:    1.125rem;  /* 18 — body small */
+  --fs-lg:    1.25rem;   /* 20 — body */
+  --fs-xl:    1.5rem;    /* 24 — lede */
+  --fs-2xl:   2rem;      /* 32 — h3 */
+  --fs-3xl:   2.5rem;    /* 40 — h2 */
+  --fs-4xl:   3.25rem;   /* 52 — h1 */
+  --fs-5xl:   4.5rem;    /* 72 — display */
+  --fs-6xl:   6rem;      /* 96 — masthead */
+
+  /* ── LINE HEIGHTS ────────────────────────────────────────────────── */
+  --lh-tight:   1.05;
+  --lh-snug:    1.18;
+  --lh-prose:   1.55;
+  --lh-loose:   1.7;
+
+  /* ── TRACKING ────────────────────────────────────────────────────── */
+  --track-tight:   -0.02em;
+  --track-normal:  0;
+  --track-wide:    0.04em;
+  --track-caps:    0.18em;   /* ALL CAPS labels */
+
+  /* ── SPACING (4 px base) ─────────────────────────────────────────── */
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   24px;
+  --sp-6:   32px;
+  --sp-7:   48px;
+  --sp-8:   64px;
+  --sp-9:   96px;
+  --sp-10:  128px;
+
+  /* ── RADII (intentionally tiny) ──────────────────────────────────── */
+  --r-0:    0;
+  --r-1:    2px;
+  --r-2:    4px;       /* MAX — only badges/pills */
+
+  /* ── ELEVATION (intentionally minimal) ───────────────────────────── */
+  --shadow-engrave: 0 1px 0 0 rgba(24, 20, 18, 0.08);
+  --shadow-stamp:   1px 1px 0 0 var(--ink);   /* PunchUp pressed state */
+
+  /* ── MOTION ──────────────────────────────────────────────────────── */
+  --ease-editorial: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast:   180ms;
+  --dur-base:   260ms;
+  --dur-slow:   420ms;
+
+  /* ── PROSE WIDTHS ────────────────────────────────────────────────── */
+  --measure:    62ch;       /* essay column */
+  --measure-sm: 48ch;       /* tight column */
+  --measure-lg: 72ch;       /* wide column */
+
+  /* ── BORDERS ─────────────────────────────────────────────────────── */
+  --border-hair:    1px solid var(--rule);
+  --border-strong:  1px solid var(--rule-strong);
+  --border-stripe:  2px solid var(--oxblood);
+}
+
+/* ────────────────────────────────────────────────────────────────────────
+   SEMANTIC TYPE STYLES
+   Use the class OR the var. Names are intentionally print-shop, not UI.
+   ──────────────────────────────────────────────────────────────────────── */
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
+  line-height: var(--lh-prose);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.di-masthead {              /* Systematic Sins, etc. */
+  font-family: var(--font-blackletter);
+  font-size: var(--fs-6xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-normal);
+  color: var(--ink);
+}
+
+.di-display {               /* hero headlines */
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: var(--fs-5xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-tight);
+  color: var(--ink);
+}
+
+.di-h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-4xl);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--track-tight);
+}
+
+.di-h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-snug);
+}
+
+.di-h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+}
+
+.di-lede {                  /* opening paragraph of essays */
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-loose);
+  color: var(--ink-soft);
+}
+
+.di-prose {                 /* default essay body */
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-lg);
+  line-height: var(--lh-loose);
+  color: var(--ink);
+  max-width: var(--measure);
+}
+
+.di-prose p + p { margin-top: 1em; }
+.di-prose em { font-style: italic; }
+.di-prose strong { font-weight: 600; }
+
+.di-pullquote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+  border-left: var(--border-stripe);
+  padding-left: var(--sp-5);
+  color: var(--ink);
+}
+
+.di-ui {                    /* default UI / sans */
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: var(--fs-base);
+  letter-spacing: var(--track-normal);
+}
+
+.di-caption {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-sm);
+  color: var(--fg-3);
+}
+
+.di-eyebrow {               /* "SYSTEMATIC SIN №07" */
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--oxblood);
+}
+
+.di-mono {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: var(--fs-sm);
+  color: var(--ink-soft);
+}
+
+.di-citation {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: var(--fs-xs);
+  color: var(--ink-mute);
+  letter-spacing: var(--track-wide);
+}
+
+.di-wordmark {              /* Divine Ipseity master wordmark */
+  font-family: var(--font-script);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.di-wordmark-caps {         /* small caps wordmark variant */
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-variant: small-caps;
+  letter-spacing: var(--track-caps);
+}
+
+a, .di-link {
+  color: var(--oxblood);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--dur-fast) var(--ease-editorial),
+              border-color var(--dur-fast) var(--ease-editorial);
+}
+
+a:hover, .di-link:hover {
+  color: var(--oxblood-foxing);
+  border-bottom-color: currentColor;
+}
+
+a:focus-visible, .di-link:focus-visible {
+  outline: 2px solid var(--oxblood);
+  outline-offset: 2px;
+}
+
+/* ── SUB-BRAND STRIPE (top of every artifact) ────────────────────── */
+.di-stripe {
+  height: 2px;
+  background: var(--oxblood);
+  width: 100%;
+}
+
+/* ── RULES ───────────────────────────────────────────────────────── */
+.di-rule       { border: 0; border-top: var(--border-hair); }
+.di-rule-strong{ border: 0; border-top: var(--border-strong); }
+.di-rule-stripe{ border: 0; border-top: var(--border-stripe); }

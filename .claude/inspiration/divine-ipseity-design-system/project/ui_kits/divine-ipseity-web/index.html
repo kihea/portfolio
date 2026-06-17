@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Divine Ipseity — Web kit</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="di-stripe-top"></div>
+  <div id="app" data-screen-label="Divine Ipseity Web"></div>
+
+  <script type="text/babel" src="Components.jsx"></script>
+  <script type="text/babel" src="Pages.jsx"></script>
+  <script type="text/babel">
+    const ESSAYS = [
+      { date: '2026 · 04 · 18', subbrand: 'Systematic Sins', number: '07', title: 'The myth of the ethical landlord.', lede: 'Rent is not labor. It is the price of having been earlier — and the system rewards arrival, not effort.', words: '4,200 words', minutes: 22 },
+      { date: '2026 · 04 · 04', subbrand: 'WithDepth',       number: '14', title: 'Marx and Lenin, and what each actually said.', lede: 'Two men separated by sixty years and a successful revolution — patient walk through where they agreed and where they did not.', words: '6,800 words', minutes: 34 },
+      { date: '2026 · 03 · 21', subbrand: 'Divine Ipseity',  number: null, title: 'Why this project is anonymous.', lede: 'A short manifesto on why definition is limitation, and why the voice is the brand.', words: '1,400 words', minutes: 8 },
+      { date: '2026 · 03 · 07', subbrand: 'Systematic Sins', number: '06', title: 'How the middle class was manufactured.', lede: 'A 25‑year project to convince working people they were not the working class — receipts attached.', words: '3,600 words', minutes: 18 },
+      { date: '2026 · 02 · 14', subbrand: 'WithDepth',       number: '13', title: 'A five‑minute explainer on rent extraction.', lede: 'The shortest piece we will publish this year, and the one we want most people to read first.', words: '1,100 words', minutes: 5 },
+      { date: '2026 · 01 · 28', subbrand: 'Process',         number: null, title: 'Three things we got wrong this quarter.', lede: 'Corrections proudly published. Two methodological, one factual, one philosophical — and what we changed.', words: '1,800 words', minutes: 9 },
+    ];
+
+    function App() {
+      const [page, setPage] = React.useState('home');
+      const open = (e) => { /* could route to /essay; we stay on archive for the kit */ };
+      let body;
+      if (page === 'home') {
+        body = (<>
+          <HeroManifesto setPage={setPage} />
+          <EssayList essays={ESSAYS.slice(0, 4)} onOpen={open} />
+          <SubscribeBlock />
+        </>);
+      } else if (page === 'manifesto') {
+        body = <Manifesto setPage={setPage} />;
+      } else if (page === 'archive') {
+        body = <Archive essays={ESSAYS} onOpen={open} />;
+      } else if (page === 'faction') {
+        body = <Faction />;
+      } else if (page === 'shop') {
+        body = <Shop />;
+      }
+      return (
+        <div className="shell">
+          <Header page={page} setPage={setPage} />
+          {body}
+          <Footer />
+          <FooterLegal />
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('app')).render(<App />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Archival imagery placeholder — open book on a table">
+  <defs>
+    <filter id="grain2"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"></feTurbulence><feColorMatrix values="0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0 0.06  0 0 0 0.5 0"></feColorMatrix></filter>
+  </defs>
+  <rect width="800" height="600" fill="#F4ECDA"></rect>
+  
+  <rect y="380" width="800" height="220" fill="#7A0E1F" opacity="0.35"></rect>
+  
+  <g transform="translate(150 220)">
+    <polygon points="0,140 250,160 500,140 500,260 250,280 0,260" fill="#181412"></polygon>
+    
+    <polygon points="10,138 250,158 250,275 10,255" fill="#F4ECDA" stroke="#181412" stroke-width="1"></polygon>
+    
+    <polygon points="490,138 250,158 250,275 490,255" fill="#F4ECDA" stroke="#181412" stroke-width="1"></polygon>
+    
+    <line x1="250" y1="158" x2="250" y2="275" stroke="#181412" stroke-width="2"></line>
+    
+    <g stroke="#181412" stroke-width="1.5" opacity="0.7">
+      <line x1="40" y1="170" x2="220" y2="180"></line>
+      <line x1="40" y1="186" x2="225" y2="196"></line>
+      <line x1="40" y1="202" x2="210" y2="210"></line>
+      <line x1="40" y1="218" x2="220" y2="228"></line>
+      <line x1="40" y1="234" x2="200" y2="242"></line>
+      <line x1="40" y1="250" x2="220" y2="258"></line>
+    </g>
+    
+    <g stroke="#181412" stroke-width="1.5" opacity="0.7">
+      <line x1="280" y1="170" x2="455" y2="180"></line>
+      <line x1="280" y1="186" x2="450" y2="196"></line>
+      <line x1="280" y1="202" x2="460" y2="210"></line>
+      <line x1="280" y1="218" x2="445" y2="226"></line>
+      <line x1="280" y1="234" x2="455" y2="242"></line>
+    </g>
+    
+    <text x="280" y="178" font-family="EB Garamond, serif" font-style="italic" font-size="22" fill="#B11226" font-weight="700">Y</text>
+  </g>
+  <rect width="800" height="600" filter="url(#grain2)" opacity="0.55"></rect>
+</svg>

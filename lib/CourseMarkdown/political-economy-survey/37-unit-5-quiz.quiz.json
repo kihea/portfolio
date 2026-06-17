@@ -1,0 +1,134 @@
+[
+  {
+    "question": "What was the founding purpose of the Mont Pelerin Society in 1947?",
+    "options": [
+      "To promote international socialism",
+      "To redefine the function of the state, defend private property and the rule of law, and oppose central planning — building a sustained intellectual counter-movement against the Keynesian and welfare-state consensus",
+      "To support European reconstruction through the Marshall Plan",
+      "To create a research consortium on monetary policy"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Mont Pelerin Society, founded by Friedrich Hayek with thirty-eight other intellectuals at a hotel in Switzerland, became the organizational core of the neoliberal movement. Eight of its members went on to win the Nobel Prize in Economics. The society still exists and has held annual meetings continuously since 1947."
+  },
+  {
+    "question": "What is the central argument of Hayek's *The Use of Knowledge in Society* (1945)?",
+    "options": [
+      "All knowledge should be centralized in a single planning authority",
+      "Markets work because prices summarize and transmit dispersed, often tacit, local knowledge that no central authority can ever aggregate",
+      "Knowledge is unimportant for economic decisions",
+      "Workers should be granted full information about their employers"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hayek's argument that economic information is dispersed across millions of individuals and that prices function as an information-aggregation mechanism is one of the most important contributions to twentieth-century economic theory. It is the foundation of the case against comprehensive central planning."
+  },
+  {
+    "question": "Milton Friedman's *Monetary History of the United States* (1963), co-written with Anna Schwartz, reinterpreted the Great Depression as caused primarily by:",
+    "options": [
+      "Excessive government spending in the late 1920s",
+      "A failure of the Federal Reserve, which allowed the U.S. money supply to contract by one-third between 1929 and 1933",
+      "Trade restrictions",
+      "Worker strikes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Friedman and Schwartz argued that the Depression was a monetary phenomenon, caused by the Fed's failure to expand the money supply during the banking crisis. This interpretation directly challenged Keynesian explanations and shaped Federal Reserve policy from the 1970s onward, especially under Volcker and Bernanke."
+  },
+  {
+    "question": "What was the 'Volcker shock' and what did it accomplish?",
+    "options": [
+      "An emergency tax cut by the Treasury",
+      "Paul Volcker's drastic raising of U.S. interest rates above 20 percent between 1979 and 1982 to break inflation, which produced a severe recession but reset inflation expectations and reshaped global capital flows",
+      "A new trade agreement between the U.S. and Japan",
+      "A wave of bank nationalizations"
+    ],
+    "correctIndex": 1,
+    "explanation": "Volcker, as Federal Reserve chair, raised interest rates dramatically to control inflation. U.S. unemployment reached 10.8 percent. Inflation fell from 13.5 percent to 3.2 percent. The shock also triggered the Latin American debt crisis and substantially shifted bargaining power from labor to capital. It established central bank independence as a global norm."
+  },
+  {
+    "question": "What was the 'Washington Consensus' as described by John Williamson in 1989?",
+    "options": [
+      "A treaty between the U.S. and Soviet Union",
+      "A summary of policy prescriptions — fiscal discipline, tax reform, trade liberalization, privatization, deregulation, property rights protection — promoted by Washington-based institutions like the IMF and World Bank in their dealings with developing countries",
+      "An agreement among Latin American countries",
+      "A monetary union proposal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Williamson's 1989 paper summarized ten policy prescriptions that had crystallized as the standard advice given by Washington-based institutions to developing countries. The Consensus shaped 'shock therapy' in the former Soviet bloc and structural adjustment across the developing world. Its credibility was substantially damaged by the Asian financial crisis (1997) and the Russian collapse of the 1990s."
+  },
+  {
+    "question": "What was the principal cause of the 2008 financial crisis, in terms of how the system actually failed?",
+    "options": [
+      "A foreign attack on the financial system",
+      "The collapse of the U.S. subprime mortgage market, transmitted through highly leveraged investment banks holding complex mortgage-backed securities, magnified by an interconnected shadow banking system",
+      "An oil price spike",
+      "A natural disaster"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subprime mortgage defaults produced losses that were initially modest in absolute terms but were magnified by 30:1 leverage at major investment banks and by the interconnections of derivatives and short-term funding markets. The system was saved by unprecedented Federal Reserve and Treasury intervention. Adam Tooze's *Crashed* (2018) is the standard historical account."
+  },
+  {
+    "question": "What does Branko Milanovic's 'elephant chart' show about the distribution of global income gains between 1988 and 2008?",
+    "options": [
+      "That everyone gained equally",
+      "That large income gains went to the global top 1 percent and to emerging-economy workers (especially in Asia), while the working classes of advanced economies experienced minimal real income growth",
+      "That only the very rich gained",
+      "That advanced economies experienced the largest gains"
+    ],
+    "correctIndex": 1,
+    "explanation": "Milanovic's chart, named for its elephant-like profile, documents that the gains of globalization were concentrated at the very top of the global income distribution and among emerging-economy workers (especially in China and East Asia), while lower-middle-income workers in advanced economies experienced wage stagnation. This distributional pattern is one of the structural drivers of the political backlash in advanced economies since the 2010s."
+  },
+  {
+    "question": "What is Shoshana Zuboff's main argument in *The Age of Surveillance Capitalism* (2019)?",
+    "options": [
+      "That privacy is no longer important",
+      "That contemporary platform capitalism represents a qualitatively new economic form organized around the extraction, prediction, and commodification of human behavioral data at unprecedented scale and granularity",
+      "That governments should ban all data collection",
+      "That platforms produce no economic value"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zuboff argues that surveillance capitalism is a distinctive economic mode whose primary product is predicted human behavior, derived from massive data extraction. Whether her specific framing is accepted or not, the empirical phenomenon — enormous expansion of personal data collection and its commercial use — is well-documented."
+  },
+  {
+    "question": "What does Hyman Minsky's 'financial instability hypothesis' claim?",
+    "options": [
+      "Financial markets are inherently efficient",
+      "Periods of financial stability produce increasingly risky behavior — moving from hedge finance to speculative to Ponzi finance — eventually destabilizing the system",
+      "Inflation is the only source of financial instability",
+      "Financial regulation has no effect"
+    ],
+    "correctIndex": 1,
+    "explanation": "Minsky argued that long periods of stability lead borrowers and lenders to underprice risk, taking on increasingly speculative positions until eventually a small disturbance triggers a cascade of failures (a 'Minsky moment'). His framework was largely ignored during his lifetime but was widely invoked after 2008."
+  },
+  {
+    "question": "Why does Mariana Mazzucato call her 2013 book *The Entrepreneurial State*?",
+    "options": [
+      "She argues states should privatize all entrepreneurial functions",
+      "She documents that the basic research underlying most modern technologies — from the internet to the iPhone touchscreen — was funded by the state, not by private venture capital, contradicting the standard narrative of private-sector innovation",
+      "She argues states should not be involved in industry",
+      "She analyzes how states should respond to entrepreneurs"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mazzucato's empirical work documents the state's foundational role in funding breakthrough technologies. The book argues for a more assertive public sector that directs investment toward public missions and captures a fair share of the returns. The framework has influenced contemporary debates on industrial policy and green-energy investment."
+  },
+  {
+    "question": "Why is the climate crisis a structural challenge to neoliberal political economy?",
+    "options": [
+      "Because solar panels are too expensive",
+      "Because effective response requires large-scale, sustained state action in markets the neoliberal era has progressively deregulated; because markets do not price externalities at the scales needed; and because the necessary transitions impose costs that current political institutions are weakly equipped to manage",
+      "Because climate change is a marketing problem",
+      "Because central banks cannot lower interest rates further"
+    ],
+    "correctIndex": 1,
+    "explanation": "The climate transition requires industrial policy at large scale, internalization of externalities through carbon pricing, regulatory phase-out of fossil fuels, and international coordination. All of these are weakened by the institutional reforms of the past forty years. The neoliberal era did not produce the climate crisis (industrial emissions have been rising since the nineteenth century) but its tools are not well-matched to addressing it."
+  },
+  {
+    "question": "What did Anne Case and Angus Deaton document in their research on U.S. mortality?",
+    "options": [
+      "That American life expectancy is rising faster than other countries",
+      "That mortality rates among middle-aged white non-college-educated Americans were rising — driven by drug overdoses, alcohol-related liver disease, and suicide — with the rise tied to the long-term economic decline of working-class communities; they called these 'deaths of despair'",
+      "That mortality is unrelated to economic conditions",
+      "That only urban residents are affected"
+    ],
+    "correctIndex": 1,
+    "explanation": "Case and Deaton's 2015 paper documented a previously unrecognized rise in mortality among a specific demographic group in an advanced industrial economy outside of war or famine. Their 2020 book *Deaths of Despair and the Future of Capitalism* extended the analysis and tied the phenomenon directly to long-term economic and social trends."
+  }
+]

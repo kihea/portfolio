@@ -1,0 +1,134 @@
+[
+  {
+    "question": "Why did Marx and Engels call earlier socialists like Owen, Fourier, and Saint-Simon 'utopian'?",
+    "options": [
+      "Because their proposed societies were impossible to imagine",
+      "Because they derived their proposals from moral reasoning about a better society rather than from analyzing the contradictions and class struggles of the present one",
+      "Because they were religious mystics",
+      "Because they wanted to abolish technology"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marx and Engels distinguished 'utopian' socialism — which they characterized as describing an ideal society and trying to persuade everyone to build it — from their own 'scientific' socialism, which they claimed derived future society from material contradictions of capitalism. The label was polemical and partly unfair, but it captured a real methodological difference."
+  },
+  {
+    "question": "What was the most durable institutional legacy of Robert Owen's failed experiments?",
+    "options": [
+      "The Communist Party",
+      "The cooperative movement, especially via the Rochdale Pioneers' model of consumer and worker cooperatives",
+      "Universal basic income",
+      "Anarchist communes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Owen's New Harmony community failed quickly, but his ideas inspired the Rochdale Pioneers (1844), whose principles of democratic governance, open membership, and surplus distribution became the international cooperative-movement standard. Today the cooperative sector employs around 280 million people worldwide."
+  },
+  {
+    "question": "What was 'War Communism' in the early Soviet state?",
+    "options": [
+      "The doctrine that all wars between capitalist nations help socialism",
+      "The emergency economic system of full nationalization, forced grain requisitioning, and suppression of private trade imposed during the Russian Civil War",
+      "Lenin's permanent economic blueprint",
+      "A military reform program"
+    ],
+    "correctIndex": 1,
+    "explanation": "War Communism (1918–1921) nationalized all industry, requisitioned grain from peasants at near-zero prices, abolished private trade, and mobilized labor under military discipline. It produced economic collapse and the Tambov and Kronstadt rebellions, after which Lenin retreated to the New Economic Policy (NEP)."
+  },
+  {
+    "question": "What did Lenin's New Economic Policy (NEP) involve?",
+    "options": [
+      "Even more aggressive collectivization than War Communism",
+      "A partial retreat that legalized small-scale private business and a market in agriculture while keeping heavy industry, banking, and foreign trade under state control",
+      "Full restoration of capitalism",
+      "Adoption of the Western European parliamentary model"
+    ],
+    "correctIndex": 1,
+    "explanation": "NEP (1921) replaced grain requisitioning with a tax in kind, legalized small private enterprise, and restored a market in consumer goods, while retaining state control of the 'commanding heights' — heavy industry, banks, foreign trade. It was a partial market-socialist arrangement that Stalin would later abolish."
+  },
+  {
+    "question": "The Soviet famine of 1932–33 was caused primarily by:",
+    "options": [
+      "Drought alone",
+      "The collectivization drive — including grain requisitioning at levels the actual harvest could not sustain, deportation of kulaks, and the destruction of agricultural productive capacity",
+      "Western sabotage",
+      "Volcanic eruptions affecting agriculture"
+    ],
+    "correctIndex": 1,
+    "explanation": "The famine was a product of state policy. Forced collectivization, the targeting of 'kulaks' as enemies, peasant resistance (including livestock slaughter), and grain extraction at levels designed to feed the cities and earn foreign exchange combined to produce mass starvation. Estimates of deaths range from five to eight million. The Ukrainian portion is recognized by many governments as a genocide (the Holodomor)."
+  },
+  {
+    "question": "What was the central argument of the 'socialist calculation debate' begun by Ludwig von Mises in 1920?",
+    "options": [
+      "That socialism would be too expensive",
+      "That a complex industrial economy cannot allocate resources rationally without market prices, because no central authority can aggregate the dispersed information that prices summarize",
+      "That socialism violates natural law",
+      "That communism requires too many forms"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mises's *Economic Calculation in the Socialist Commonwealth* (1920) argued that without market prices, planners cannot compare the alternative uses of resources rationally. Hayek refined this in 1945, emphasizing the role of dispersed tacit knowledge that prices summarize. The Soviet experience is largely a test of this argument; the result was good at single-industry mobilization, bad at allocation across many sectors."
+  },
+  {
+    "question": "What was distinctive about Mao's strategy for revolution in China, relative to orthodox Marxism-Leninism?",
+    "options": [
+      "He focused on urban industrial workers, like Lenin",
+      "He argued that the peasantry, not the industrial proletariat, would be the revolutionary class, and built guerrilla bases in the countryside",
+      "He rejected Marxism entirely",
+      "He sought immediate alliance with the Nationalists"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mao argued — heterodoxly — that in a country with a small urban proletariat and a vast peasantry, revolution would have to be agrarian. He built rural base areas, conducted people's wars from them, and eventually encircled the cities from the countryside. This was a substantial revision of Marxist-Leninist orthodoxy and shaped twentieth-century revolutionary movements globally."
+  },
+  {
+    "question": "What was the Great Leap Forward (1958–1962)?",
+    "options": [
+      "A successful program of rapid industrialization",
+      "Mao's attempt to leap past the Soviet model through mass mobilization, communalization, and decentralized industrial efforts (e.g., backyard steel furnaces), which produced the largest famine in human history",
+      "A military campaign against Taiwan",
+      "An agreement with the United States to liberalize trade"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Great Leap Forward attempted simultaneous agricultural and industrial transformation through mass mobilization. Communalization, false harvest reports, mass diversion of labor from farming, and consequent over-extraction of grain produced famine. Excess deaths are estimated by the most careful demographers (Yang Jisheng, Frank Dikötter) at 30–45 million."
+  },
+  {
+    "question": "What is *Mitbestimmung* in the German social-market economy?",
+    "options": [
+      "A type of unemployment insurance",
+      "A system of formal worker representation on the supervisory boards of large firms, mandated by law",
+      "A wage-setting institution",
+      "A central bank"
+    ],
+    "correctIndex": 1,
+    "explanation": "*Mitbestimmung* (co-determination) is the German legal framework requiring worker representatives on the supervisory boards of large corporations. In firms with more than 2,000 employees, half the supervisory board is worker-elected, with management retaining a tie-breaking chair. It is the most ambitious system of formal worker participation in any G7 country."
+  },
+  {
+    "question": "What was Yugoslav 'workers' self-management'?",
+    "options": [
+      "A wage-control system",
+      "An economic model in which socially-owned firms were managed by elected workers' councils, with firms competing in markets and a small state sector retained — the most serious national experiment in market socialism",
+      "An anti-corruption program",
+      "A youth labor movement"
+    ],
+    "correctIndex": 1,
+    "explanation": "After Tito's break with Stalin in 1948, Yugoslavia developed self-management under the theorist Edvard Kardelj. Firms were socially owned, managed by workers' councils, and competed in markets. The system produced rapid growth through the 1950s–60s but accumulated structural problems and collapsed politically with the Yugoslav Wars (1991 onward). The Mondragón cooperative federation in the Basque Country is the surviving institutional analogue."
+  },
+  {
+    "question": "Why is Allende's Chile (1970–73) considered a significant test case in political economy?",
+    "options": [
+      "Because it was the first communist regime in the Western Hemisphere",
+      "Because it tested whether democratic socialism could be implemented through constitutional means in a developing country facing U.S. opposition — and was overthrown by a U.S.-supported military coup before the experiment could resolve",
+      "Because it had the world's highest GDP growth rate",
+      "Because it was a model of free-market economics"
+    ],
+    "correctIndex": 1,
+    "explanation": "Allende was the first Marxist elected through democratic processes in a major Latin American country. His program — nationalization of copper, land reform, expanded social programs — faced U.S. economic and political destabilization (now documented in declassified records) and was ended by the 1973 coup. The case remains central to debates about whether democratic socialism can survive in the international capitalist system."
+  },
+  {
+    "question": "What does the 'Pink Tide' refer to in Latin American political economy?",
+    "options": [
+      "A failed conservative revolution",
+      "The wave of left and center-left governments elected across Latin America in the late 1990s and 2000s, with shared emphases on poverty reduction, resource nationalism, and skepticism of Washington Consensus prescriptions",
+      "A trade agreement between Cuba and the United States",
+      "A military alliance"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Pink Tide (so called for being less radical-red than the Cold War left) included Chávez in Venezuela, Lula in Brazil, the Kirchners in Argentina, Morales in Bolivia, Correa in Ecuador, and others. The governments produced substantial poverty reductions when commodity prices were high, and faced reversals when prices collapsed after 2014. A second wave began in 2018."
+  }
+]

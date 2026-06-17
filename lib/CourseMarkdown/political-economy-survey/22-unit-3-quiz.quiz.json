@@ -1,0 +1,134 @@
+[
+  {
+    "question": "What does Marx mean by 'alienation' in the 1844 Manuscripts?",
+    "options": [
+      "Workers are paid less than they need to live",
+      "The wage relation produces a qualitative wrongness in the worker's relationship to her product, her activity, her humanity, and other workers — independent of the wage level",
+      "Workers are unable to form unions",
+      "Workers cannot afford to buy what they produce"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marx's concept of alienation describes a structural distortion of the worker's relationship with her own life under wage labor. It is not primarily about the wage level. A well-paid worker can be alienated in Marx's sense if her labor is forced, instrumental, and severed from her product. This is one of Marx's most enduring claims."
+  },
+  {
+    "question": "What is the relationship between Marx and Hegel?",
+    "options": [
+      "Marx rejected Hegel completely and built a wholly new system",
+      "Marx inherited Hegel's dialectical method but inverted it from idealism to materialism",
+      "Marx and Hegel were contemporaries who collaborated closely",
+      "Marx was largely unaware of Hegel's work"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marx was trained as a Hegelian, broke with the Young Hegelians in 1845, and inverted Hegel's idealist dialectic into a materialist one. As he put it: in Hegel, consciousness determines life; in Marx, life determines consciousness. The dialectical method stays; what it is a dialectic of changes from ideas to material relations."
+  },
+  {
+    "question": "What is the key distinction Marx makes in *Capital* between 'labor' and 'labor-power'?",
+    "options": [
+      "Labor is mental work; labor-power is physical work",
+      "Labor is the actual activity; labor-power is the capacity to work, which is what the capitalist buys",
+      "Labor is skilled work; labor-power is unskilled",
+      "Labor is paid; labor-power is unpaid"
+    ],
+    "correctIndex": 1,
+    "explanation": "Marx's central analytic move: the capitalist buys labor-power (the capacity to work for a given period), not labor (the activity itself). Labor-power has a value (the cost of reproducing the worker). The labor it performs creates a different and larger value. The gap is surplus value."
+  },
+  {
+    "question": "What is surplus value in Marx's theory?",
+    "options": [
+      "Profit that comes from selling above market price",
+      "The difference between what workers are paid for their labor-power and the value their labor creates",
+      "Money that capitalists save through frugality",
+      "Tax revenue collected by the state"
+    ],
+    "correctIndex": 1,
+    "explanation": "Surplus value is the value produced by the worker during the working day in excess of the value of the worker's labor-power (i.e., the wage). It is the unpaid portion of labor. It is, in Marx's analysis, the source of all capitalist profit."
+  },
+  {
+    "question": "What is the difference between absolute and relative surplus value?",
+    "options": [
+      "Absolute is total profit, relative is profit margin",
+      "Absolute is extended by lengthening the working day, relative is extended by reducing the labor needed to produce the worker's subsistence",
+      "Absolute applies to factories, relative applies to services",
+      "Absolute is historical, relative is current"
+    ],
+    "correctIndex": 1,
+    "explanation": "Absolute surplus value is increased by making the working day longer — a strategy dominant in early industrial capitalism. Relative surplus value is increased by raising productivity (through technology or work intensification), so that the labor required to produce the worker's subsistence bundle falls. This strategy is dominant in mature capitalism and explains why a contemporary worker can earn more goods than her grandmother and still be more exploited."
+  },
+  {
+    "question": "What does Marx mean by 'commodity fetishism'?",
+    "options": [
+      "An unhealthy attachment to material goods",
+      "The way social relations between producers appear as quantitative relations between things, obscuring the labor that produced them",
+      "The economic value of religious objects",
+      "Advertising's effect on consumer behavior"
+    ],
+    "correctIndex": 1,
+    "explanation": "Commodity fetishism is the structural way capitalist exchange makes social relations between producers appear as objective relations between things. Value seems to inhere in the commodity itself rather than in the social labor relations that produced it. The structure borrows from Feuerbach's analysis of religious projection."
+  },
+  {
+    "question": "What was Eduard Bernstein's central revisionist claim?",
+    "options": [
+      "That capitalism would collapse sooner than Marx predicted",
+      "That the empirical trajectory of European capitalism did not match Marx's predictions, and that socialism would have to be achieved through gradual reform rather than revolutionary rupture",
+      "That Marx had been wrong about commodity fetishism",
+      "That the working class was inherently incapable of self-organization"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bernstein's *Evolutionary Socialism* (1899) argued that capitalist development had not produced the increasing immiseration and concentration Marx had predicted, and that the path to socialism therefore ran through electoral and trade-union politics rather than revolution. He was denounced by orthodox Marxists as a 'revisionist.' The line he drew became the social-democratic tradition."
+  },
+  {
+    "question": "Rosa Luxemburg's *The Accumulation of Capital* (1913) argued that:",
+    "options": [
+      "Capitalism could grow indefinitely if managed properly",
+      "Capitalism structurally required imperialism — the constant search for non-capitalist markets, raw materials, and labor",
+      "Workers should focus only on wage demands",
+      "Banks would eventually replace industry as the engine of growth"
+    ],
+    "correctIndex": 1,
+    "explanation": "Luxemburg argued that capitalist accumulation requires an 'outside' — non-capitalist regions to extract resources from and sell to. The expansion of European empires in the late nineteenth century was not an accident but a structural requirement. Luxemburg was murdered by right-wing paramilitaries in Berlin in 1919."
+  },
+  {
+    "question": "Antonio Gramsci's concept of 'hegemony' refers to:",
+    "options": [
+      "Military dominance by one state over others",
+      "The way a dominant class secures consent to its rule through cultural, educational, and ideological institutions rather than through direct force",
+      "The price-setting power of monopolies",
+      "The political dominance of a single party"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gramsci's hegemony describes how a ruling class maintains power not primarily through coercion but by shaping the categories through which ordinary people understand the world — schools, media, religion, common sense. Counter-hegemonic politics requires a long 'war of position' to build alternative institutions of cultural production, not just a direct seizure of state power."
+  },
+  {
+    "question": "What is the central thesis of Horkheimer and Adorno's *Dialectic of Enlightenment*?",
+    "options": [
+      "Enlightenment was a moral failure and should be rejected",
+      "Enlightenment rationality, intended to liberate humanity, produced a new kind of instrumental domination over nature, others, and the self — and this dynamic culminated in the catastrophes of the twentieth century",
+      "Reason and progress are always positive forces",
+      "Religion was the only barrier to human freedom"
+    ],
+    "correctIndex": 1,
+    "explanation": "*Dialectic of Enlightenment* (1947) argued that the Enlightenment project of mastering nature through reason turned humans themselves into objects of calculation, producing the totalitarianisms and mass-cultural conformism of the twentieth century. The book is one of the most influential and contested works of twentieth-century critical theory."
+  },
+  {
+    "question": "Why did the Western Marxist tradition turn from economics toward culture, ideology, and consciousness in the early twentieth century?",
+    "options": [
+      "Economics was too difficult",
+      "The expected revolutionary upheaval in advanced capitalist countries had not arrived, and theorists needed to explain why the working class was not behaving as Marx had predicted",
+      "Cultural analysis was more fashionable",
+      "Marx's economic theory had been formally disproven"
+    ],
+    "correctIndex": 1,
+    "explanation": "The failure of the German working class to support socialist revolution in 1918–19, the rise of fascism, the integration of the working class into welfare capitalism, and the rise of mass commercial culture all pushed Western Marxists to ask why workers were not behaving as classical Marxism expected. The answer — that consciousness is produced by the institutions of cultural and ideological life — reshaped twentieth-century thought."
+  },
+  {
+    "question": "How did Friedrich Engels contribute to the Marxian tradition beyond being Marx's collaborator?",
+    "options": [
+      "He provided no original theoretical contributions",
+      "He produced influential works on the empirical conditions of the working class, on the family and the state, and on the systematization of Marxism into a 'scientific' worldview — and he edited *Capital* Volumes II and III from Marx's notebooks after Marx's death",
+      "He primarily worked on translating Hegel into English",
+      "He retired from political work after Marx's death"
+    ],
+    "correctIndex": 1,
+    "explanation": "Engels was a major theorist in his own right: *The Condition of the Working Class in England* (1845), *Anti-Dühring* (1878), *The Origin of the Family, Private Property, and the State* (1884), and *Socialism: Utopian and Scientific* (1880). He also did the editorial labor that produced *Capital* Volumes II and III. Some twentieth-century critics argue his positivist scientism flattened Marx's dialectical complexity — that debate is real but does not detract from his stature."
+  }
+]

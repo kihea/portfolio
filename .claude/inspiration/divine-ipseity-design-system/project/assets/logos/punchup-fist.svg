@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-label="PunchUp">
+  
+  <g fill="#181412">
+    
+    <path d="M70 240 L70 160 Q70 142 86 138 L114 138 Q130 142 130 160 L130 240 Z"></path>
+    
+    <rect x="64" y="148" width="72" height="12" fill="#B11226"></rect>
+    
+    <path d="M62 90 Q62 64 84 60 L116 60 Q138 64 138 90 L138 138 L62 138 Z"></path>
+    
+    <path d="M52 108 Q44 100 48 88 Q54 78 66 80 L66 130 Q56 128 52 120 Z"></path>
+    
+    <g stroke="#F4ECDA" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <line x1="74" y1="76" x2="74" y2="118"></line>
+      <line x1="92" y1="74" x2="92" y2="118"></line>
+      <line x1="110" y1="74" x2="110" y2="118"></line>
+      <line x1="128" y1="76" x2="128" y2="118"></line>
+    </g>
+    
+    <g fill="#F4ECDA">
+      <circle cx="74" cy="68" r="2"></circle>
+      <circle cx="92" cy="66" r="2"></circle>
+      <circle cx="110" cy="66" r="2"></circle>
+      <circle cx="128" cy="68" r="2"></circle>
+    </g>
+  </g>
+  
+  <g stroke="#B11226" stroke-width="3" stroke-linecap="round">
+    <line x1="100" y1="44" x2="100" y2="20"></line>
+    <line x1="68" y1="50" x2="56" y2="30"></line>
+    <line x1="132" y1="50" x2="144" y2="30"></line>
+    <line x1="42" y1="74" x2="22" y2="68"></line>
+    <line x1="158" y1="74" x2="178" y2="68"></line>
+  </g>
+</svg>

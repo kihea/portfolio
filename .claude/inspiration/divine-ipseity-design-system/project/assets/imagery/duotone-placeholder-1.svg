@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Archival imagery placeholder — crowd at dusk">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F4ECDA"></stop>
+      <stop offset="100%" stop-color="#E8B6BD"></stop>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2"></feTurbulence><feColorMatrix values="0 0 0 0 0.09  0 0 0 0 0.07  0 0 0 0 0.06  0 0 0 0.4 0"></feColorMatrix></filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"></rect>
+  
+  <rect y="380" width="800" height="220" fill="#7A0E1F"></rect>
+  
+  <g fill="#181412">
+    <rect x="0" y="340" width="800" height="60" opacity="0.4"></rect>
+    <g transform="translate(0 320)">
+      <circle cx="40" cy="40" r="18"></circle><rect x="22" y="56" width="36" height="48"></rect>
+      <circle cx="100" cy="36" r="16"></circle><rect x="84" y="50" width="32" height="54"></rect>
+      <circle cx="160" cy="42" r="20"></circle><rect x="140" y="60" width="40" height="46"></rect>
+      <circle cx="220" cy="38" r="17"></circle><rect x="203" y="54" width="34" height="52"></rect>
+      <circle cx="280" cy="40" r="19"></circle><rect x="261" y="58" width="38" height="48"></rect>
+      <circle cx="340" cy="36" r="16"></circle><rect x="324" y="50" width="32" height="56"></rect>
+      <circle cx="400" cy="42" r="20"></circle><rect x="380" y="60" width="40" height="46"></rect>
+      <circle cx="460" cy="38" r="17"></circle><rect x="443" y="54" width="34" height="52"></rect>
+      <circle cx="520" cy="40" r="19"></circle><rect x="501" y="58" width="38" height="48"></rect>
+      <circle cx="580" cy="36" r="16"></circle><rect x="564" y="50" width="32" height="56"></rect>
+      <circle cx="640" cy="42" r="20"></circle><rect x="620" y="60" width="40" height="46"></rect>
+      <circle cx="700" cy="38" r="17"></circle><rect x="683" y="54" width="34" height="52"></rect>
+      <circle cx="760" cy="40" r="19"></circle><rect x="741" y="58" width="38" height="48"></rect>
+    </g>
+    
+    <line x1="180" y1="200" x2="180" y2="360" stroke="#181412" stroke-width="2"></line>
+    <line x1="430" y1="180" x2="430" y2="340" stroke="#181412" stroke-width="2"></line>
+    <line x1="610" y1="220" x2="610" y2="360" stroke="#181412" stroke-width="2"></line>
+    <rect x="155" y="195" width="60" height="40" fill="#181412"></rect>
+    <rect x="405" y="175" width="68" height="44" fill="#181412"></rect>
+    <rect x="585" y="215" width="60" height="40" fill="#181412"></rect>
+  </g>
+  <rect width="800" height="600" filter="url(#grain)" opacity="0.5"></rect>
+</svg>
