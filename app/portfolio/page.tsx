@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { TipFlow } from "@/components/faction/TipFlow";
 import { isStripeConfigured } from "@/lib/stripe";
 
@@ -113,9 +114,21 @@ export default function PortfolioPage() {
             <span>Computer Science · Texas State University</span>
           </div>
 
-          <h1 className="font-display italic font-light text-[color:var(--fg)] leading-[1.02] tracking-[-0.025em] text-[clamp(2.5rem,6vw,68px)] tura-wordmark">
-            Kihea Adams-Wilson
-          </h1>
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-7">
+            <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border border-[var(--rule-strong)] bg-[var(--bg-alt)] shadow-[var(--card-shadow)] md:h-36 md:w-36">
+              <Image
+                src="/images/kihea-headshot.jpg"
+                alt="Portrait of Kihea Adams-Wilson"
+                fill
+                sizes="(max-width: 768px) 112px, 144px"
+                className="object-cover object-top"
+                priority
+              />
+            </div>
+            <h1 className="font-display italic font-light text-[color:var(--fg)] leading-[1.02] tracking-[-0.025em] text-[clamp(2.5rem,6vw,68px)] tura-wordmark">
+              Kihea Adams-Wilson
+            </h1>
+          </div>
 
           <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-[1.5fr_1fr] md:gap-16">
             <div className="max-w-[60ch] space-y-5 font-body text-[16px] leading-[1.85] text-[color:var(--fg-2)] md:text-[17px]">
