@@ -86,7 +86,7 @@ export function ShareDialog({ title, url, passage, className }: Props) {
           ref={panelRef}
           role="dialog"
           aria-label="Share options"
-          className="absolute left-0 top-full z-50 mt-2 w-[220px] overflow-hidden rounded-[12px] border border-[var(--rule-strong)] bg-[color:var(--bg-alt)] shadow-[var(--card-shadow)]"
+          className="absolute left-0 top-full z-1000 mt-2 w-[220px] overflow-visible rounded-[12px] border border-[var(--rule-strong)] bg-[color:var(--bg-alt)] shadow-[var(--card-shadow)]"
         >
           {/* Panel header */}
           <div className="border-b border-[var(--rule)] px-4 py-3">

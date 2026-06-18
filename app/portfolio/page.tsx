@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     name: "Tessera",
     blurb:
-      "A learning feed that pulls verbatim excerpts from real sources and weaves them together by connection, paired with a study notebook. An in-browser model does the research, and the whole thing runs client-side.",
+      "A learning feed that pulls excerpts from sources and weaves them together by connection, paired with a study notebook. An in-browser model does the research, and the whole thing runs client-side.",
     tags: ["React", "TypeScript", "Vite", "WebGPU / WebLLM"],
     github: "https://github.com/kihea/tessera",
     demo: "/learn",
@@ -31,10 +31,10 @@ const projects: Project[] = [
   {
     name: "K.Engine",
     blurb:
-      "A work-in-progress game engine written in C++ with 2D/3D rendering, audio, physics, and animation, compiled to the browser with Emscripten.",
+      "A work-in-progress game engine written in C++ with 2D/3D rendering, audio, physics, and animation, compiled to the browser with Emscripten. What started as a project intended to help me learn C++ and 3D rendering has evolved into an engine.",
     tags: ["C++", "Emscripten", "WebAssembly", "Game Engine"],
     github: "https://github.com/Bellaire-Games-Studio/K.Engine",
-    demo: "https://bellaire-games-studio.github.io/K.Engine/",
+    demo: "https://bellaire-games-studio.github.io/K.Engine/build/bin/K.Engine.html",
   },
   {
     name: "Earley Calculator",
@@ -55,8 +55,8 @@ const projects: Project[] = [
   {
     name: "Kihea.dev",
     blurb:
-      "My personal developer site, served by a Python backend. The repo's tagline says it best: before Claude and ChatGPT, there was Kihea.dev.",
-    tags: ["Python", "Azure Functions", "Backend"],
+      "An NBA prop research tool utilizing machine learning models (namely XGBoost, LightGBM and RandomForest) to predict future targets.",
+    tags: ["Python", "XGBoost", "Backend", "LightGBM"],
     github: "https://github.com/kihea/python-backend",
     demo: "https://kihea-dev-website.vercel.app/",
   },

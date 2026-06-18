@@ -36,11 +36,11 @@ function CinematicFooterInner() {
       <div className="relative z-10 border-y border-[var(--rule)] bg-[color-mix(in_oklab,var(--bg-alt)_85%,transparent)] py-4 backdrop-blur">
         <Marquee
           items={[
-            "Pro-human, anti-extractive",
-            "Warm toward people, sharp toward systems",
+            "Instruments of greatness",
+            "Politics is personal",
             "Definition is limitation",
             "We show our work",
-            "Preservation over production",
+            "Humanity over production",
           ]}
           divider="✦"
         />

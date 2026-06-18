@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const marqueePhrases = [
-  "preservation of the human",
-  "warm toward people",
+  "preservation of humanity",
+  "vessels of ideation",
   "sharp toward systems",
   "definition is limitation",
   "we show our work",
@@ -208,7 +208,7 @@ export function IntroOverlay() {
           transition={{ duration: 0.8, delay: 0.7, ease: [0.19, 1, 0.22, 1] }}
           className="mt-5 font-heading text-[10px] tracking-[0.32em] uppercase text-[color:var(--fg-2)]"
         >
-          for the people inheriting a broken system
+          for the generation inheriting a broken system
         </motion.div>
       </div>
 

@@ -33,7 +33,7 @@ export function AboutTeaser() {
               src="/images/galina-nelyubova-remember-us.jpg"
               alt=""
               fill
-              sizes="(max-width: 1024px) 100vw, 44vw"
+              sizes="(max-width: 1024px) 80vw, 40vw"
               className="object-cover"
               style={{ filter: "saturate(0.85)" }}
             />
