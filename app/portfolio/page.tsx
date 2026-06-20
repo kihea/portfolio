@@ -65,9 +65,9 @@ const projects: Project[] = [
 
 const experience = [
   {
-    role: "Software Engineer Intern",
+    role: "City of Houston Intern",
     org: "Microsoft",
-    period: "Apr – Jun 2025",
+    period: "Apr – Aug 2023",
   },
 ];
 
