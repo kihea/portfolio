@@ -129,7 +129,31 @@ export default function PortfolioPage() {
               Kihea Adams-Wilson
             </h1>
           </div>
-
+          <div className="flex flex-wrap gap-3 my-3">
+            {contacts.map((c) => (
+              <a
+                key={c.label}
+                href={c.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 rounded-full border border-[var(--rule-strong)] bg-[color:var(--bg-alt)] px-5 py-3 transition-colors hover:border-[var(--fg)]"
+              >
+                <ContactIcon
+                  name={c.icon}
+                  className="shrink-0 text-[color:var(--fg-3)] transition-colors group-hover:text-[color:var(--fg)]"
+                />
+                <span className="font-heading text-[10px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] group-hover:text-[color:var(--fg)]">
+                  {c.label}
+                </span>
+                <span className="font-body text-[13.5px] text-[color:var(--fg-2)] group-hover:text-[color:var(--fg)]">
+                  {c.handle}
+                </span>
+                <span className="text-[color:var(--fg-3)] transition-transform group-hover:translate-x-0.5 group-hover:text-[color:var(--fg)]">
+                  ↗
+                </span>
+              </a>
+            ))}
+          </div>
           <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-[1.5fr_1fr] md:gap-16">
             <div className="max-w-[60ch] space-y-5 font-body text-[16px] leading-[1.85] text-[color:var(--fg-2)] md:text-[17px]">
               <p>
@@ -191,39 +215,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* ───────── Contacts ───────── */}
-      <section className="relative border-t border-[var(--rule)] bg-[var(--bg)] px-[var(--content-pad)] py-[clamp(3rem,6vw,5rem)]">
-        <div className="mx-auto max-w-[var(--max-width)]">
-          <div className="mb-8 flex items-center gap-3 font-heading text-[10px] uppercase tracking-[0.22em] text-[color:var(--fg-3)]">
-            <span className="block h-px w-8 bg-[var(--rule-strong)]" />
-            <span>Elsewhere</span>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            {contacts.map((c) => (
-              <a
-                key={c.label}
-                href={c.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 rounded-full border border-[var(--rule-strong)] bg-[color:var(--bg-alt)] px-5 py-3 transition-colors hover:border-[var(--fg)]"
-              >
-                <ContactIcon
-                  name={c.icon}
-                  className="shrink-0 text-[color:var(--fg-3)] transition-colors group-hover:text-[color:var(--fg)]"
-                />
-                <span className="font-heading text-[10px] uppercase tracking-[0.18em] text-[color:var(--fg-3)] group-hover:text-[color:var(--fg)]">
-                  {c.label}
-                </span>
-                <span className="font-body text-[13.5px] text-[color:var(--fg-2)] group-hover:text-[color:var(--fg)]">
-                  {c.handle}
-                </span>
-                <span className="text-[color:var(--fg-3)] transition-transform group-hover:translate-x-0.5 group-hover:text-[color:var(--fg)]">
-                  ↗
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* ───────── Support ───────── */}
       <section
@@ -245,6 +237,7 @@ export default function PortfolioPage() {
           <TipFlow enabled={stripeReady} />
         </div>
       </section>
+      
     </main>
   );
 }
